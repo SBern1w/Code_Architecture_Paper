@@ -1,0 +1,11 @@
+// {
+//     "configurations": [
+//         {
+//             "name": "Python: File",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "./20240403_matrix_optimization/converge_matrix.py",
+//             "justMyCode": true
+//         }
+//     ]
+// }
