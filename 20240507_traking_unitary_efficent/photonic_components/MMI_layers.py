@@ -39,8 +39,8 @@ class MMILayerMatrix_Even(nn.Module):
             tau = 0.5 + mmi_imbalances
             kappa = 0.5 - mmi_imbalances
 
-        tau_tf = atten * torch.sqrt(tau)
-        kappa_tf = atten * 1.j * torch.sqrt(kappa)
+        tau_tf = torch.sqrt(atten) * torch.sqrt(tau)
+        kappa_tf = torch.sqrt(atten) * 1.j * torch.sqrt(kappa)
         
         mmi_elements = torch.stack([
             torch.stack([tau_tf, kappa_tf], dim=-1),
@@ -86,8 +86,8 @@ class MMILayerMatrix_Odd(nn.Module):
             tau = 0.5 + mmi_imbalances
             kappa = 0.5 - mmi_imbalances
         
-        tau_tf = atten * torch.sqrt(tau)
-        kappa_tf = atten * 1.j * torch.sqrt(kappa)
+        tau_tf = torch.sqrt(atten) * torch.sqrt(tau)
+        kappa_tf = torch.sqrt(atten) * 1.j * torch.sqrt(kappa)
         
         mmi_elements = torch.stack([
             torch.stack([tau_tf, kappa_tf], dim=-1),

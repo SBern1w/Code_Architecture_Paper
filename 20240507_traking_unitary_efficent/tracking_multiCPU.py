@@ -6,8 +6,9 @@
 # to run directly terminal comand (after make it executable chmod +x your_script.sh): bash your_script.sh
 # To run on the HPC TERMINAL TO PUT QUEUE RUN FUCK: qsub your_script.sh
 
-
 import os
+import json
+import sys
 from mpi4py import MPI
 import numpy as np
 from scipy.stats import unitary_group
@@ -19,39 +20,19 @@ import torch.optim as optim
 
 from unitary_matrix_models import *
 
+
+# MPI inizialization
+comm = MPI.COMM_WORLD
+rank = comm.Get_rank()      # Get the rank of the current process within the communicator
+size_comm = comm.Get_size()      # Get the total number of processes in the communicator
+
 # Select GPU if available, else fall back to CPU
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# HIGH PARAMETERS =================================================================================================
-seed = 37
-
-n_inputs = 4
-n_matrices = 1000
-n_repetitions = 5
-
-lr = 0.001
-if n_inputs == 4:
-    n_epochs = 20000
-elif n_inputs == 8:
-    n_epochs = 22000
-elif n_inputs == 16:
-    n_epochs = 25000
-
-name_models = ['Clements_Arct', 'ClementsBell_Arct', 'Fldzhyan_Arct', 'FldzhyanBell_Arct',
-               'FldzhyanBellHalf_Arct', 'NEUROPULS_Arct']
-
-# CONSTANT LOSS
-i_loss = 0.          # from 0 min to 1 max
-imbalance = 0.       # from 0 min to 0.5 max
-cross_talk = imbalance      # from 0 min to 1 max
-
-# If RAM too full decrease and fail with kill problem -> Decrease this number
-n_bachup = 500
-
-folder_path = '20240507_traking_unitary_efficent/outdata/'
-name_folder_out = '20240511_n'+str(n_inputs)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_myPC_simulation/'
-# =================================================================================================================
-
+# Load some hyperparameters ---------------------------------------------------------------------------------------
+def load_hyperparameters(config_file):
+    with open(config_file, 'r') as f:
+        return json.load(f)
 
 # Loss function ---------------------------------------------------------------------------------------------------
 # Compless MSE Loss function, from the definition
@@ -109,6 +90,13 @@ def select_model(name_model):
             mmi_imbalances_mtx_odd=mmi_imbalances_mtx_odd)
     elif name_model == 'NEUROPULS_Arct':
         model = NEUROPULS_Arct(
+            n_inputs=n_inputs,
+            mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
+            mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
+            crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd,
+            crossing_crosstalks_mtx_odd=crossing_crosstalks_mtx_odd)
+    elif name_model == 'NEUROPULSBell_Arct':
+        model = NEUROPULSBell_Arct(
             n_inputs=n_inputs,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
@@ -177,10 +165,45 @@ def test_out_TP():
 # =================================================== Main ========================================================
 # =================================================================================================================
 if __name__ == "__main__":
-    # MPI inizialization
-    comm = MPI.COMM_WORLD
-    rank = comm.Get_rank()      # Get the rank of the current process within the communicator
-    size_comm = comm.Get_size()      # Get the total number of processes in the communicator
+
+    if len(sys.argv) != 2:
+        print("Usage: python main_program.py <config_file>")
+        sys.exit(1)
+    config_file = sys.argv[1]
+
+    # HIGH PARAMETERS =============================================================================================
+    hp = load_hyperparameters(config_file)
+    seed = 37
+
+    n_inputs = 8
+    n_matrices = 1000
+    n_repetitions = 5
+
+    lr = 0.001
+    if n_inputs == 4:
+        n_epochs = 20000
+    elif n_inputs == 8:
+        n_epochs = 22000
+    elif n_inputs == 16:
+        n_epochs = 25000
+
+    # name_models = ['Clements_Arct', 'ClementsBell_Arct', 'Fldzhyan_Arct', 'FldzhyanBell_Arct',
+    #                'FldzhyanBellHalf_Arct', 'NEUROPULS_Arct', 'NEUROPULSBell_Arct']
+    name_models = ['NEUROPULS_Arct']
+
+    # CONSTANT LOSS
+    i_loss = hp['i_loss']          # from 0 min to 1 max
+    imbalance = hp['imbalance']       # from 0 min to 0.5 max
+    cross_talk = imbalance      # from 0 min to 1 max
+
+    # If RAM too full decrease and fail with kill problem -> Decrease this number
+    n_bachup = 500
+
+    folder_path = hp['folder_path']
+    name_folder_out = 'n'+str(n_inputs)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_HPC_simulation/'
+    # =============================================================================================================
+    # =============================================================================================================
+
 
     # Seed for the random number
     torch.manual_seed(seed)

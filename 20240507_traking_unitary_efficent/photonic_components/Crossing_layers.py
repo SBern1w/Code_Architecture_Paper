@@ -34,17 +34,17 @@ class CrossingLayerMatrix_Odd(nn.Module):
             atten = torch.ones(_n_crossing, device=device)
             tau = torch.zeros(_n_crossing, device=device)
             kappa = atten
-            edge_up_crossing = torch.Tensor([1.])
+            edge_up_crossing = torch.Tensor([1.], device=device)
             edge_dw_crossing = edge_up_crossing
         else:
             atten = (1 - crossing_i_losses[1:-1])
             tau = crossing_crosstalks[1:-1]
             kappa = 1 - crossing_crosstalks[1:-1]
-            edge_up_crossing = (1 - crossing_i_losses[0])* torch.sqrt(torch.Tensor([crossing_crosstalks[0]]))
-            edge_dw_crossing = (1 - crossing_i_losses[-1])* torch.sqrt(torch.Tensor([crossing_crosstalks[-1]]))
+            edge_up_crossing = torch.sqrt(1 - crossing_i_losses[0]) * torch.sqrt(1 - crossing_crosstalks[0])
+            edge_dw_crossing = torch.sqrt(1 - crossing_i_losses[-1]) * torch.sqrt(1 - crossing_crosstalks[-1])
 
-        tau_tf = atten * torch.sqrt(tau)
-        kappa_tf = atten * 1.j * torch.sqrt(kappa)
+        tau_tf = torch.sqrt(atten) * torch.sqrt(tau)
+        kappa_tf = torch.sqrt(atten) * 1.j * torch.sqrt(kappa)
         
         crossing_elements = torch.stack([
             torch.stack([tau_tf, kappa_tf], dim=-1),
