@@ -200,7 +200,7 @@ if __name__ == "__main__":
     # If RAM too full decrease and fail with kill problem -> Decrease this number
     n_bachup = 500
 
-    folder_path = "outdata/"
+    folder_path = hp['folder_path']
     name_folder_out = 'n'+str(n_inputs)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_HPC_simulation/'
     # =============================================================================================================
     # =============================================================================================================
