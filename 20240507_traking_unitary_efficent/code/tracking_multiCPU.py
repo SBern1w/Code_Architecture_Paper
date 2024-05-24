@@ -34,6 +34,7 @@ def load_hyperparameters(config_file):
     with open(config_file, 'r') as f:
         return json.load(f)
 
+
 # Loss function ---------------------------------------------------------------------------------------------------
 # Compless MSE Loss function, from the definition
 class CMatrixMSELoss(nn.Module):
@@ -45,6 +46,7 @@ class CMatrixMSELoss(nn.Module):
         loss = torch.sum(mag_diff_sq) / torch.numel(target_matrix)
         return loss
 
+
 # Model -----------------------------------------------------------------------------------------------------------
 def select_model(name_model):
     mmi_i_losses_mtx_even = torch.full((n_inputs, n_inputs//2), i_loss)
@@ -53,6 +55,8 @@ def select_model(name_model):
     mmi_imbalances_mtx_odd = torch.full((n_inputs, n_inputs//2-1), imbalance)
     crossing_i_losses_mtx_odd = torch.full((n_inputs//2-1, n_inputs//2+1), i_loss)
     crossing_crosstalks_mtx_odd = torch.full((n_inputs//2-1, n_inputs//2+1), cross_talk)
+    crossing_i_losses_mtx_odd2 = torch.full((n_inputs//2-1, n_inputs//2-1), i_loss)
+    crossing_crosstalks_mtx_odd2 = torch.full((n_inputs//2-1, n_inputs//2-1), cross_talk)
     if name_model == 'Clements_Arct':
         model = Clements_Arct(
             n_inputs=n_inputs,
@@ -102,6 +106,13 @@ def select_model(name_model):
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd,
             crossing_crosstalks_mtx_odd=crossing_crosstalks_mtx_odd)
+    elif name_model == 'NEUROPULSBell2_Arct':
+        model = NEUROPULSBell2_Arct(
+            n_inputs=n_inputs,
+            mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
+            mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
+            crossing_i_losses_mtx_odd2=crossing_i_losses_mtx_odd2,
+            crossing_crosstalks_mtx_odd2=crossing_crosstalks_mtx_odd2)
     else:
         model = None
         raise Exception('Something not good on the input')
@@ -175,7 +186,7 @@ if __name__ == "__main__":
     hp = load_hyperparameters(config_file)
     seed = 37
 
-    n_inputs = 8
+    n_inputs = hp['n_inputs']
     n_matrices = 1000
     n_repetitions = 5
 
@@ -188,12 +199,12 @@ if __name__ == "__main__":
         n_epochs = 25000
 
     # name_models = ['Clements_Arct', 'ClementsBell_Arct', 'Fldzhyan_Arct', 'FldzhyanBell_Arct',
-    #                'FldzhyanBellHalf_Arct', 'NEUROPULS_Arct', 'NEUROPULSBell_Arct']
-    name_models = ['NEUROPULS_Arct']
-
+    #                'FldzhyanBellHalf_Arct', 'NEUROPULS_Arct', 'NEUROPULSBell_Arct', 'NEUROPULSBell2_Arct']
+    name_models = ['NEUROPULSBell2_Arct']
+    
     # CONSTANT LOSS
     i_loss = hp['i_loss']          # from 0 min to 1 max
-    imbalance = hp['imbalance']       # from 0 min to 0.5 max
+    imbalance = hp['imbalance']       # from -0.5 min to 0.5 max
     cross_talk = imbalance      # from 0 min to 1 max
 
     # If RAM too full decrease and fail with kill problem -> Decrease this number
@@ -203,7 +214,6 @@ if __name__ == "__main__":
     name_folder_out = 'n'+str(n_inputs)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_HPC_simulation/'
     # =============================================================================================================
     # =============================================================================================================
-
 
     # Seed for the random number
     torch.manual_seed(seed)
@@ -224,7 +234,7 @@ if __name__ == "__main__":
     # Take the list compose by 12 sublist and spread them between the 12 CPUs (12 is jsut example. It is size_comm)
     input_list = comm.scatter(input_sublist, root=0)     # Scatter data from rank 0 to all other ranks
     maxn_sim_core = comm.scatter([maxn_sim_core for i in range(size_comm)], root=0)   # Max num simulation
-  
+
     # ============================================== SIMULATIONS ==================================================
     # Two case CORE < SIM nMAX_sim_xCORE=1 and CORE > SIM nMAX_sim_xCORE LAS = +n sim to do
     out_targets_predictions = []

@@ -77,3 +77,28 @@ class HeaterLayerMatrix_Odd(nn.Module):
         layer = torch.where(self.mask, torch.exp(1.j*self.phase_shift), self.conn)
         return layer.view(-1, 1) * x_matrix
 
+
+class HeaterLayerMatrix_TopBottom(nn.Module):
+    r""" Create waveguide matrix layer with just the top and bottom lines connected to a ht
+    0__[h]__0
+
+    1_______1
+
+    2_______2
+    
+    3__[h]__3
+    """
+    def __init__(self,
+                 n_inputs: int,):
+        super(HeaterLayerMatrix_TopBottom, self).__init__()
+        if n_inputs%2 == 1: raise Exception('n_inputs is odd!!! NONONO, put it even!!!')
+        self.phase_shift = nn.Parameter(2*torch.pi*torch.rand(n_inputs, device=device), requires_grad=True)
+        self.mask = torch.tensor([False for _ in range(n_inputs)], dtype=torch.bool)
+        self.mask[0] = True
+        self.mask[-1] = True
+        self.conn = torch.ones((n_inputs), device=device)
+
+    def forward(self, x_matrix):
+        layer = torch.where(self.mask, torch.exp(1.j*self.phase_shift), self.conn)
+        return layer.view(-1, 1) * x_matrix
+

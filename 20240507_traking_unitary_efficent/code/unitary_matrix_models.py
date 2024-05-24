@@ -206,10 +206,10 @@ class Fldzhyan_Arct(nn.Module):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
         for i in range(self._n_layers):
-            arct_matrix = self._mmi_layer_even[i](arct_matrix)
             arct_matrix = self._ht_layer_even[i](arct_matrix)
-            arct_matrix = self._mmi_layer_odd[i](arct_matrix)
+            arct_matrix = self._mmi_layer_even[i](arct_matrix)
             arct_matrix = self._ht_layer_odd[i](arct_matrix)
+            arct_matrix = self._mmi_layer_odd[i](arct_matrix)
         arct_matrix = self._ht_layer_out(arct_matrix)
         return arct_matrix
 
@@ -414,7 +414,7 @@ class NEUROPULS_Arct(nn.Module):
             arct_matrix = self._ht_layer_even[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers_ht//2 - 1:
-                self._crossing_layer_odd[i](arct_matrix)
+                arct_matrix = self._crossing_layer_odd[i](arct_matrix)
         arct_matrix = self._ht_layer_out(arct_matrix)
         return arct_matrix
 
@@ -489,8 +489,83 @@ class NEUROPULSBell_Arct(nn.Module):
             arct_matrix = self._ht_layer_full[i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers_ht - 1:
-                self._crossing_layer_odd[i](arct_matrix)
+                arct_matrix = self._crossing_layer_odd[i](arct_matrix)
         arct_matrix = self._ht_layer_out(arct_matrix)
         return arct_matrix
 
 
+# NEUROPULS Bell 2 Architecture -----------------------------------------------------------------------------------
+class NEUROPULSBell2_Arct(nn.Module):
+    r"""
+    NEUROPULS Bell architecture:
+        0__[]__  __[]__  _______[]______  __[]__  __[]__0
+               \/      \/               \/      \/
+        1__[]__/\__[]__/\______   ______/\__[]__/\__[]__1
+                               \-/
+        2__[]__  __[]__  ______/-\______  __[]__  __[]__2
+               \/      \/               \/      \/
+        3__[]__/\__[]__/\_______[]______/\__[]__/\__[]__3
+
+        with:
+            0__[]__1 = Phase Shifter
+
+            0__  __0
+               \/    =  MMI
+            1__/\__1
+            
+            0__   __0
+               \-/   =  Crossing
+            1__/-\__1
+    """
+    def __init__(self,
+                 n_inputs: int,
+                 mmi_i_losses_mtx_even: torch.Tensor = None,
+                 mmi_imbalances_mtx_even: torch.Tensor = None,
+                 crossing_i_losses_mtx_odd2: torch.Tensor = None,
+                 crossing_crosstalks_mtx_odd2: torch.Tensor = None):
+        super(NEUROPULSBell2_Arct, self).__init__()
+        if n_inputs%2 == 1: raise Exception('n_inputs is odd!!! NONONO, put it even!!!')
+        self._n_inputs = n_inputs
+        self._n_layers_ht = n_inputs//2
+        self._n_layers_mmi = n_inputs
+        self._n_layers_crossing = n_inputs//2 - 1
+        
+        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
+        # EVEN
+        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
+            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+                n_inputs=n_inputs,
+                mmi_i_losses=mmi_i_losses_mtx_even[i],
+                mmi_imbalances=mmi_imbalances_mtx_even[i])
+                for i in range(self._n_layers_mmi)])
+        else:
+            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
+        # ODD
+        self._ht_layer_topbottom = nn.ModuleList([HeaterLayerMatrix_TopBottom(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
+        if (crossing_i_losses_mtx_odd2 is not None) and (crossing_crosstalks_mtx_odd2 is not None):
+            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_noTopBottom(
+                n_inputs=n_inputs,
+                crossing_i_losses=crossing_i_losses_mtx_odd2[i],
+                crossing_crosstalks=crossing_crosstalks_mtx_odd2[i])
+                for i in range(self._n_layers_crossing)])
+        else:
+            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_noTopBottom(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
+        
+        # IN OUT
+        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+
+    def forward(self):
+        id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
+        arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
+        arct_matrix = self._ht_layer_in(arct_matrix)
+        for i in range(self._n_layers_ht):
+            arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
+            arct_matrix = self._ht_layer_full[i](arct_matrix)
+            arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
+            if i < self._n_layers_ht - 1:
+                arct_matrix = self._crossing_layer_odd[i](arct_matrix)
+                arct_matrix = self._ht_layer_topbottom[i](arct_matrix)
+        arct_matrix = self._ht_layer_out(arct_matrix)
+        return arct_matrix
+    

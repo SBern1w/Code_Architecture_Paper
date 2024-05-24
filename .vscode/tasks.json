@@ -4,7 +4,7 @@
         {
             "label": "Run Shell Script",
             "type": "shell",
-            "command": "./run_code.sh",
+            "command": "./20240507_traking_unitary_efficent/run_myPC_hyp1.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
