@@ -198,9 +198,8 @@ if __name__ == "__main__":
     elif n_inputs == 16:
         n_epochs = 25000
 
-    # name_models = ['Clements_Arct', 'ClementsBell_Arct', 'Fldzhyan_Arct', 'FldzhyanBell_Arct',
-    #                'FldzhyanBellHalf_Arct', 'NEUROPULS_Arct', 'NEUROPULSBell_Arct', 'NEUROPULSBell2_Arct']
-    name_models = ['NEUROPULSBell2_Arct']
+    name_models = ['Clements_Arct', 'ClementsBell_Arct', 'Fldzhyan_Arct', 'FldzhyanBell_Arct',
+                   'FldzhyanBellHalf_Arct', 'NEUROPULS_Arct', 'NEUROPULSBell_Arct', 'NEUROPULSBell2_Arct']
     
     # CONSTANT LOSS
     i_loss = hp['i_loss']          # from 0 min to 1 max
