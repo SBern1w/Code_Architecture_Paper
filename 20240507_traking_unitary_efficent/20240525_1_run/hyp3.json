@@ -1,0 +1,6 @@
+{
+    "n_inputs": 8,
+    "i_loss": 0.1,
+    "imbalance": 0.2,
+    "folder_path": "20240525_run/outdata/"
+}
