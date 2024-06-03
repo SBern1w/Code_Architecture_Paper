@@ -1,0 +1,9 @@
+{
+    "runs": [
+      {"n_inputs": 8, "i_loss": 0.0, "imbalance": 0.0,  "folder_path": "20240601_run/outdata/"},
+      {"n_inputs": 8, "i_loss": 0.0, "imbalance": 0.05, "folder_path": "20240601_run/outdata/"},
+      {"n_inputs": 8, "i_loss": 0.0, "imbalance": 0.1,  "folder_path": "20240601_run/outdata/"},
+      {"n_inputs": 8, "i_loss": 0.0, "imbalance": 0.15, "folder_path": "20240601_run/outdata/"},
+      {"n_inputs": 8, "i_loss": 0.0, "imbalance": 0.2,  "folder_path": "20240601_run/outdata/"}
+    ]
+  }
