@@ -235,7 +235,7 @@ if __name__ == "__main__":
     # CONSTANT LOSS
     i_loss = float(args.i_loss)             # from 0 min to 1 max
     imbalance = float(args.imbalance)       # from -0.5 min to 0.5 max
-    cross_talk = imbalance                  # from 0 min to 1 max
+    cross_talk = abs(imbalance)                  # from 0 min to 1 max
 
     # If RAM too full decrease and fail with kill problem -> Decrease this number
     n_bachup = 500
