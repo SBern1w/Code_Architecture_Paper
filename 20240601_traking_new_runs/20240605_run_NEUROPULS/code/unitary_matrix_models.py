@@ -198,7 +198,8 @@ class Fldzhyan_Arct(nn.Module):
                 mmi_i_losses=mmi_i_losses_mtx_odd[i],
                 mmi_imbalances=mmi_imbalances_mtx_odd[i])
                 for i in range(self._n_layers)])
-        self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        else:
+            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
         # OUT
         self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
 
@@ -262,7 +263,8 @@ class FldzhyanBell_Arct(nn.Module):
                 mmi_i_losses=mmi_i_losses_mtx_odd[i],
                 mmi_imbalances=mmi_imbalances_mtx_odd[i])
                 for i in range(self._n_layers)])
-        self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        else:
+            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
         # IN OUT
         self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
         self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
