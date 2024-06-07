@@ -231,8 +231,8 @@ if __name__ == "__main__":
     seed = 37
 
     n_inputs = int(args.n_inputs)
-    n_matrices = 10
-    n_repetitions = 1
+    n_matrices = 1000
+    n_repetitions = 5
 
     lr = 0.001
     if n_inputs == 4:
