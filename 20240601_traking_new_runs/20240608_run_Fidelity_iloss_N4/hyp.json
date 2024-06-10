@@ -1,0 +1,23 @@
+{
+  "runs": [
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.00, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.05, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.10, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.15, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.20, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.25, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.30, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.35, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.40, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": 0.45, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.05, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.10, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.15, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.20, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.25, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.30, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.35, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.40, "folder_path": "outdata/"},
+    {"n_inputs": 4, "i_loss": 0.4, "imbalance": -0.45, "folder_path": "outdata/"}
+  ]
+}

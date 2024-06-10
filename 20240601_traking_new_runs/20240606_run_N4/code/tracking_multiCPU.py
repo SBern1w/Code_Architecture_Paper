@@ -235,7 +235,7 @@ if __name__ == "__main__":
     # CONSTANT LOSS
     i_loss = float(args.i_loss)             # from 0 min to 1 max
     imbalance = float(args.imbalance)       # from -0.5 min to 0.5 max
-    cross_talk = 0.0                  # from 0 min to 1 max
+    cross_talk = abs(imbalance)                  # from 0 min to 1 max
 
     # If RAM too full decrease and fail with kill problem -> Decrease this number
     n_bachup = 500
@@ -296,7 +296,7 @@ if __name__ == "__main__":
     if out_targets_predictions != []:
         targets_predictions_np = np.array(out_targets_predictions, dtype=[('label', 'U100'), ('matrix', 'O')])
         out_targets_predictions = []
-        np.save(folder_path+name_folder_out+'save'+str(i//n_bachup)+'_CPU'+str(rank), targets_predictions_np)
+        np.save(folder_path+name_folder_out+'save'+str(i//n_bachup+1)+'_CPU'+str(rank), targets_predictions_np)
         del targets_predictions_np
     
     if rank == 0:

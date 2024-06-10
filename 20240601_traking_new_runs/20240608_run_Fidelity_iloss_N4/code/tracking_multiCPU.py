@@ -47,6 +47,21 @@ class CMatrixMSELoss(nn.Module):
         loss = torch.sum(mag_diff_sq) / torch.numel(target_matrix)
         return loss
 
+# Fidelity unitary matrix
+class FidelityUnitary(nn.Module):
+    def __init__(self, n_inputs):
+        super(FidelityUnitary, self).__init__()
+        self.n_inputs = n_inputs
+    
+    def forward(self, predicted_matrix, target_matrix):
+        predicted_matrix = predicted_matrix.to(torch.complex64)
+        target_matrix = target_matrix.to(torch.complex64)
+        Frobenius_module_p = torch.trace(torch.matmul(predicted_matrix.t().conj(), predicted_matrix))
+        Frobenius_pt = torch.trace(torch.matmul(predicted_matrix.t().conj(), target_matrix))
+        cosine_similarity = (torch.abs(Frobenius_pt))**2/(self.n_inputs*Frobenius_module_p)
+        Fidelity = torch.abs(cosine_similarity)
+        loss = 1 - Fidelity
+        return loss
 
 # Model -----------------------------------------------------------------------------------------------------------
 def select_model(name_model):
@@ -154,7 +169,7 @@ def model_prediction(args):
     # Inizialize model
     model = select_model(name_model=name_model)
     # Create loss and optimizer
-    loss_fn = CMatrixMSELoss()
+    loss_fn = FidelityUnitary(n_inputs)
     optimizer = optim.Adam(model.parameters(), lr=lr)
     # Optimization
     for _ in range(n_epochs):     # Optimiziation with gradient
@@ -235,7 +250,7 @@ if __name__ == "__main__":
     # CONSTANT LOSS
     i_loss = float(args.i_loss)             # from 0 min to 1 max
     imbalance = float(args.imbalance)       # from -0.5 min to 0.5 max
-    cross_talk = abs(imbalance)                  # from 0 min to 1 max
+    cross_talk = abs(imbalance)             # from 0 min to 1 max
 
     # If RAM too full decrease and fail with kill problem -> Decrease this number
     n_bachup = 500
@@ -296,7 +311,7 @@ if __name__ == "__main__":
     if out_targets_predictions != []:
         targets_predictions_np = np.array(out_targets_predictions, dtype=[('label', 'U100'), ('matrix', 'O')])
         out_targets_predictions = []
-        np.save(folder_path+name_folder_out+'save'+str(i//n_bachup)+'_CPU'+str(rank), targets_predictions_np)
+        np.save(folder_path+name_folder_out+'save'+str(i//n_bachup+1)+'_CPU'+str(rank), targets_predictions_np)
         del targets_predictions_np
     
     if rank == 0:
