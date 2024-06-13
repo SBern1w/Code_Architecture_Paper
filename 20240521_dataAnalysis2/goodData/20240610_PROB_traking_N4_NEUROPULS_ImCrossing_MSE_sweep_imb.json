@@ -1,0 +1,5488 @@
+{
+    "name_file": "traking_N4_NEUROPUSL_ImCrossing_MSE_sweep_imb",
+    "n_inputs": 4,
+    "n_epochs": 20000,
+    "date": "20240610",
+    "train_type": "MSE",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": "5 I think is 3 I did save all data !!!!!!!!!",
+    "lr": 0.001,
+    "n_bachup": 500,
+    "data_out_type": "MSE",
+    "rep_type": "min",
+    "simulations": [
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.10428453704793982,
+            "std_dev": 0.044032077536641255
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.10428453704793982,
+            "std_dev": 0.044032077536641255
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.10428453704793982,
+            "std_dev": 0.044032077536641255
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.06237347688496512,
+            "std_dev": 0.03486721028345679
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.06237347688496512,
+            "std_dev": 0.03486721028345679
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.06237347688496512,
+            "std_dev": 0.03486721028345679
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.03641149134124668,
+            "std_dev": 0.025408960362311866
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.03641149134124668,
+            "std_dev": 0.025408960362311866
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.03641149134124668,
+            "std_dev": 0.025408960362311866
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.019678251741073235,
+            "std_dev": 0.016658968612982196
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.019678251741073235,
+            "std_dev": 0.016658968612982196
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.019678251741073235,
+            "std_dev": 0.016658968612982196
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 0.009333400395110469,
+            "std_dev": 0.009659954548897894
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.009333400395110469,
+            "std_dev": 0.009659954548897894
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 0.009333400395110469,
+            "std_dev": 0.009659954548897894
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 0.0037148840145129255,
+            "std_dev": 0.004800582728076457
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.0037148840145129255,
+            "std_dev": 0.004800582728076457
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 0.0037148840145129255,
+            "std_dev": 0.004800582728076457
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 0.0011415555895089029,
+            "std_dev": 0.001988885920457521
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0011415555895089029,
+            "std_dev": 0.001988885920457521
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 0.0011415555895089029,
+            "std_dev": 0.001988885920457521
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 0.00021933717733170423,
+            "std_dev": 0.0005969463658283608
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00021933717733170423,
+            "std_dev": 0.0005969463658283608
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 0.00021933717733170423,
+            "std_dev": 0.0005969463658283608
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 1.3875111829479469e-05,
+            "std_dev": 7.326948147605415e-05
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 1.3875111829479469e-05,
+            "std_dev": 7.326948147605415e-05
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 1.3875111829479469e-05,
+            "std_dev": 7.326948147605415e-05
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 9.184281865068787e-11,
+            "std_dev": 1.7167665185846026e-09
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 9.184281865068787e-11,
+            "std_dev": 1.7167665185846026e-09
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 9.184281865068787e-11,
+            "std_dev": 1.7167665185846026e-09
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 1.387499741450209e-05,
+            "std_dev": 7.326929359384977e-05
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 1.387499741450209e-05,
+            "std_dev": 7.326929359384977e-05
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 1.387499741450209e-05,
+            "std_dev": 7.326929359384977e-05
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 0.00021933722398537387,
+            "std_dev": 0.0005969462891674469
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00021933722398537387,
+            "std_dev": 0.0005969462891674469
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 0.00021933722398537387,
+            "std_dev": 0.0005969462891674469
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.0011285043614067687,
+            "std_dev": 0.0019682938186091166
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0011285043614067687,
+            "std_dev": 0.0019682938186091166
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.0011285043614067687,
+            "std_dev": 0.0019682938186091166
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.0037129543442772886,
+            "std_dev": 0.004796098754944208
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.0037129543442772886,
+            "std_dev": 0.004796098754944208
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.0037129543442772886,
+            "std_dev": 0.004796098754944208
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.00932182632367387,
+            "std_dev": 0.009651827945926996
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.00932182632367387,
+            "std_dev": 0.009651827945926996
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.00932182632367387,
+            "std_dev": 0.009651827945926996
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.01961130382545846,
+            "std_dev": 0.0166911360249849
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.01961130382545846,
+            "std_dev": 0.0166911360249849
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.01961130382545846,
+            "std_dev": 0.0166911360249849
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.03644464968003668,
+            "std_dev": 0.025546392806138754
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.03644464968003668,
+            "std_dev": 0.025546392806138754
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.03644464968003668,
+            "std_dev": 0.025546392806138754
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.06235941787211662,
+            "std_dev": 0.03486164590055114
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.06235941787211662,
+            "std_dev": 0.03486164590055114
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.06235941787211662,
+            "std_dev": 0.03486164590055114
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.10431299676958457,
+            "std_dev": 0.04410405033498111
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.10431299676958457,
+            "std_dev": 0.04410405033498111
+        },
+        {
+            "architecture": "Clements_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.10431299676958457,
+            "std_dev": 0.04410405033498111
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.10417900143321158,
+            "std_dev": 0.04402584620792511
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.10417900143321158,
+            "std_dev": 0.04402584620792511
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.10417900143321158,
+            "std_dev": 0.04402584620792511
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.06230230376292307,
+            "std_dev": 0.034839736975913825
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.06230230376292307,
+            "std_dev": 0.034839736975913825
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.06230230376292307,
+            "std_dev": 0.034839736975913825
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.03634880938398951,
+            "std_dev": 0.025432357309212034
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.03634880938398951,
+            "std_dev": 0.025432357309212034
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.03634880938398951,
+            "std_dev": 0.025432357309212034
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.0196485224546581,
+            "std_dev": 0.016677126999604056
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0196485224546581,
+            "std_dev": 0.016677126999604056
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.0196485224546581,
+            "std_dev": 0.016677126999604056
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 0.009349434124074501,
+            "std_dev": 0.009674293557055557
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.009349434124074501,
+            "std_dev": 0.009674293557055557
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 0.009349434124074501,
+            "std_dev": 0.009674293557055557
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 0.0037231448318792667,
+            "std_dev": 0.004805877954048735
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.0037231448318792667,
+            "std_dev": 0.004805877954048735
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 0.0037231448318792667,
+            "std_dev": 0.004805877954048735
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 0.0011393320623846416,
+            "std_dev": 0.001983980406987984
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0011393320623846416,
+            "std_dev": 0.001983980406987984
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 0.0011393320623846416,
+            "std_dev": 0.001983980406987984
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 0.00022147346186911804,
+            "std_dev": 0.0006003580661859952
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00022147346186911804,
+            "std_dev": 0.0006003580661859952
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 0.00022147346186911804,
+            "std_dev": 0.0006003580661859952
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 1.4060013682671303e-05,
+            "std_dev": 7.373923427522725e-05
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 1.4060013682671303e-05,
+            "std_dev": 7.373923427522725e-05
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 1.4060013682671303e-05,
+            "std_dev": 7.373923427522725e-05
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 8.494414355638158e-12,
+            "std_dev": 3.769622652869988e-11
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 8.494414355638158e-12,
+            "std_dev": 3.769622652869988e-11
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 8.494414355638158e-12,
+            "std_dev": 3.769622652869988e-11
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 1.4059961257701584e-05,
+            "std_dev": 7.373922766803324e-05
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 1.4059961257701584e-05,
+            "std_dev": 7.373922766803324e-05
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 1.4059961257701584e-05,
+            "std_dev": 7.373922766803324e-05
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 0.0002214733859557851,
+            "std_dev": 0.0006003581106926119
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.0002214733859557851,
+            "std_dev": 0.0006003581106926119
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 0.0002214733859557851,
+            "std_dev": 0.0006003581106926119
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.001137478185631081,
+            "std_dev": 0.0019759177992702335
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.001137478185631081,
+            "std_dev": 0.0019759177992702335
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.001137478185631081,
+            "std_dev": 0.0019759177992702335
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.003725231020506327,
+            "std_dev": 0.004802417599653155
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.003725231020506327,
+            "std_dev": 0.004802417599653155
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.003725231020506327,
+            "std_dev": 0.004802417599653155
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.00935765766949752,
+            "std_dev": 0.009668919390073033
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.00935765766949752,
+            "std_dev": 0.009668919390073033
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.00935765766949752,
+            "std_dev": 0.009668919390073033
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.01963510887345479,
+            "std_dev": 0.01666905150283598
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.01963510887345479,
+            "std_dev": 0.01666905150283598
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.01963510887345479,
+            "std_dev": 0.01666905150283598
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.03634253995620277,
+            "std_dev": 0.025422553363130578
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.03634253995620277,
+            "std_dev": 0.025422553363130578
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.03634253995620277,
+            "std_dev": 0.025422553363130578
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.06227087413629872,
+            "std_dev": 0.03485013580604627
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.06227087413629872,
+            "std_dev": 0.03485013580604627
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.06227087413629872,
+            "std_dev": 0.03485013580604627
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.10417001167294028,
+            "std_dev": 0.04399525143926332
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.10417001167294028,
+            "std_dev": 0.04399525143926332
+        },
+        {
+            "architecture": "ClementsBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.10417001167294028,
+            "std_dev": 0.04399525143926332
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.06325450926760719,
+            "std_dev": 0.030116647940584277
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.06325450926760719,
+            "std_dev": 0.030116647940584277
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.06325450926760719,
+            "std_dev": 0.030116647940584277
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.01893285369017022,
+            "std_dev": 0.014516865775563052
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.01893285369017022,
+            "std_dev": 0.014516865775563052
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.01893285369017022,
+            "std_dev": 0.014516865775563052
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.0041082115823301915,
+            "std_dev": 0.005551151582079579
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.0041082115823301915,
+            "std_dev": 0.005551151582079579
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.0041082115823301915,
+            "std_dev": 0.005551151582079579
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.0005511277797784189,
+            "std_dev": 0.0016990448277249305
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0005511277797784189,
+            "std_dev": 0.0016990448277249305
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.0005511277797784189,
+            "std_dev": 0.0016990448277249305
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 6.571748309636319e-05,
+            "std_dev": 0.00044868364266815395
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 6.571748309636319e-05,
+            "std_dev": 0.00044868364266815395
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 6.571748309636319e-05,
+            "std_dev": 0.00044868364266815395
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 1.5219425357474869e-05,
+            "std_dev": 0.00016781657071464017
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 1.5219425357474869e-05,
+            "std_dev": 0.00016781657071464017
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 1.5219425357474869e-05,
+            "std_dev": 0.00016781657071464017
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 1.2740468993962092e-06,
+            "std_dev": 2.3000295978774204e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 1.2740468993962092e-06,
+            "std_dev": 2.3000295978774204e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 1.2740468993962092e-06,
+            "std_dev": 2.3000295978774204e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 3.0908605810455915e-06,
+            "std_dev": 3.4959940694034274e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 3.0908605810455915e-06,
+            "std_dev": 3.4959940694034274e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 3.0908605810455915e-06,
+            "std_dev": 3.4959940694034274e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 9.65083840522234e-06,
+            "std_dev": 0.00019807533875249882
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.65083840522234e-06,
+            "std_dev": 0.00019807533875249882
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 9.65083840522234e-06,
+            "std_dev": 0.00019807533875249882
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 6.3136038524187816e-06,
+            "std_dev": 6.983342517572398e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 6.3136038524187816e-06,
+            "std_dev": 6.983342517572398e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 6.3136038524187816e-06,
+            "std_dev": 6.983342517572398e-05
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 2.0468040663176027e-05,
+            "std_dev": 0.00019117658836485286
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 2.0468040663176027e-05,
+            "std_dev": 0.00019117658836485286
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 2.0468040663176027e-05,
+            "std_dev": 0.00019117658836485286
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 5.631187562006173e-05,
+            "std_dev": 0.0003158693988735994
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 5.631187562006173e-05,
+            "std_dev": 0.0003158693988735994
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 5.631187562006173e-05,
+            "std_dev": 0.0003158693988735994
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.00029698840601907284,
+            "std_dev": 0.00106808485828396
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.00029698840601907284,
+            "std_dev": 0.00106808485828396
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.00029698840601907284,
+            "std_dev": 0.00106808485828396
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.0015184714616512862,
+            "std_dev": 0.0033636719588149683
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.0015184714616512862,
+            "std_dev": 0.0033636719588149683
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.0015184714616512862,
+            "std_dev": 0.0033636719588149683
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.005285134625690672,
+            "std_dev": 0.007878476017627012
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.005285134625690672,
+            "std_dev": 0.007878476017627012
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.005285134625690672,
+            "std_dev": 0.007878476017627012
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.014141793145763646,
+            "std_dev": 0.015182898899306681
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.014141793145763646,
+            "std_dev": 0.015182898899306681
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.014141793145763646,
+            "std_dev": 0.015182898899306681
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.030370813412707923,
+            "std_dev": 0.0240174853292181
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.030370813412707923,
+            "std_dev": 0.0240174853292181
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.030370813412707923,
+            "std_dev": 0.0240174853292181
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.057052875651276154,
+            "std_dev": 0.03362361374382094
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.057052875651276154,
+            "std_dev": 0.03362361374382094
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.057052875651276154,
+            "std_dev": 0.03362361374382094
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.1012243126456717,
+            "std_dev": 0.043457777215704804
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.1012243126456717,
+            "std_dev": 0.043457777215704804
+        },
+        {
+            "architecture": "Fldzhyan_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.1012243126456717,
+            "std_dev": 0.043457777215704804
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.0633573466411257,
+            "std_dev": 0.030113055192289274
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.0633573466411257,
+            "std_dev": 0.030113055192289274
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.0633573466411257,
+            "std_dev": 0.030113055192289274
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.019027228148501437,
+            "std_dev": 0.014558412641470205
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.019027228148501437,
+            "std_dev": 0.014558412641470205
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.019027228148501437,
+            "std_dev": 0.014558412641470205
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.004138722198110969,
+            "std_dev": 0.005628530542156501
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.004138722198110969,
+            "std_dev": 0.005628530542156501
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.004138722198110969,
+            "std_dev": 0.005628530542156501
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.0005530325268494842,
+            "std_dev": 0.0016696231682037902
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0005530325268494842,
+            "std_dev": 0.0016696231682037902
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.0005530325268494842,
+            "std_dev": 0.0016696231682037902
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 7.348992104004855e-05,
+            "std_dev": 0.0005138018440927287
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 7.348992104004855e-05,
+            "std_dev": 0.0005138018440927287
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 7.348992104004855e-05,
+            "std_dev": 0.0005138018440927287
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 8.39650614892352e-06,
+            "std_dev": 8.701430847515759e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 8.39650614892352e-06,
+            "std_dev": 8.701430847515759e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 8.39650614892352e-06,
+            "std_dev": 8.701430847515759e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 3.71771701966644e-06,
+            "std_dev": 4.0453497709657654e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 3.71771701966644e-06,
+            "std_dev": 4.0453497709657654e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 3.71771701966644e-06,
+            "std_dev": 4.0453497709657654e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 4.252236568135491e-06,
+            "std_dev": 6.0097883127559224e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 4.252236568135491e-06,
+            "std_dev": 6.0097883127559224e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 4.252236568135491e-06,
+            "std_dev": 6.0097883127559224e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 7.057318105846883e-07,
+            "std_dev": 7.30766139277745e-06
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 7.057318105846883e-07,
+            "std_dev": 7.30766139277745e-06
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 7.057318105846883e-07,
+            "std_dev": 7.30766139277745e-06
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 3.968707771463567e-06,
+            "std_dev": 6.927540012181277e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 3.968707771463567e-06,
+            "std_dev": 6.927540012181277e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 3.968707771463567e-06,
+            "std_dev": 6.927540012181277e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 7.263130861498562e-06,
+            "std_dev": 4.902935465782712e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 7.263130861498562e-06,
+            "std_dev": 4.902935465782712e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 7.263130861498562e-06,
+            "std_dev": 4.902935465782712e-05
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 4.5707446476710334e-05,
+            "std_dev": 0.000252698879709121
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 4.5707446476710334e-05,
+            "std_dev": 0.000252698879709121
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 4.5707446476710334e-05,
+            "std_dev": 0.000252698879709121
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.0002727525839764863,
+            "std_dev": 0.0009406250459052347
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0002727525839764863,
+            "std_dev": 0.0009406250459052347
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.0002727525839764863,
+            "std_dev": 0.0009406250459052347
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.0014325945084856532,
+            "std_dev": 0.00319725091372192
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.0014325945084856532,
+            "std_dev": 0.00319725091372192
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.0014325945084856532,
+            "std_dev": 0.00319725091372192
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.0052808939386426975,
+            "std_dev": 0.00799375071669316
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.0052808939386426975,
+            "std_dev": 0.00799375071669316
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.0052808939386426975,
+            "std_dev": 0.00799375071669316
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.014133818285830753,
+            "std_dev": 0.015319792845721722
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.014133818285830753,
+            "std_dev": 0.015319792845721722
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.014133818285830753,
+            "std_dev": 0.015319792845721722
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.03035689247493714,
+            "std_dev": 0.024200479143785786
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.03035689247493714,
+            "std_dev": 0.024200479143785786
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.03035689247493714,
+            "std_dev": 0.024200479143785786
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.05702948342591531,
+            "std_dev": 0.033685770216153835
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.05702948342591531,
+            "std_dev": 0.033685770216153835
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.05702948342591531,
+            "std_dev": 0.033685770216153835
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.10133759778501189,
+            "std_dev": 0.04347600011801336
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.10133759778501189,
+            "std_dev": 0.04347600011801336
+        },
+        {
+            "architecture": "FldzhyanBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.10133759778501189,
+            "std_dev": 0.04347600011801336
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.15620238951181484,
+            "std_dev": 0.05001364047539955
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.15620238951181484,
+            "std_dev": 0.05001364047539955
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": null,
+            "average": 0.15620238951181484,
+            "std_dev": 0.05001364047539955
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.1146047946051218,
+            "std_dev": 0.04190030412130632
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.1146047946051218,
+            "std_dev": 0.04190030412130632
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": null,
+            "average": 0.1146047946051218,
+            "std_dev": 0.04190030412130632
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.08827687195766783,
+            "std_dev": 0.03500735547849845
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.08827687195766783,
+            "std_dev": 0.03500735547849845
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": null,
+            "average": 0.08827687195766783,
+            "std_dev": 0.03500735547849845
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.07054514805839913,
+            "std_dev": 0.02923687793131664
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.07054514805839913,
+            "std_dev": 0.02923687793131664
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": null,
+            "average": 0.07054514805839913,
+            "std_dev": 0.02923687793131664
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 0.0587604920420796,
+            "std_dev": 0.024961603712967583
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.0587604920420796,
+            "std_dev": 0.024961603712967583
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": null,
+            "average": 0.0587604920420796,
+            "std_dev": 0.024961603712967583
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 0.051532774357694454,
+            "std_dev": 0.02252197214882695
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.051532774357694454,
+            "std_dev": 0.02252197214882695
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": null,
+            "average": 0.051532774357694454,
+            "std_dev": 0.02252197214882695
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 0.04748156712684468,
+            "std_dev": 0.02126128893560855
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.04748156712684468,
+            "std_dev": 0.02126128893560855
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": null,
+            "average": 0.04748156712684468,
+            "std_dev": 0.02126128893560855
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 0.046197477013831575,
+            "std_dev": 0.021742894516925234
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.046197477013831575,
+            "std_dev": 0.021742894516925234
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": null,
+            "average": 0.046197477013831575,
+            "std_dev": 0.021742894516925234
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 0.047268752370095875,
+            "std_dev": 0.023393355738214126
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.047268752370095875,
+            "std_dev": 0.023393355738214126
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": null,
+            "average": 0.047268752370095875,
+            "std_dev": 0.023393355738214126
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 0.05019059433053319,
+            "std_dev": 0.02590133547642661
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.05019059433053319,
+            "std_dev": 0.02590133547642661
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": null,
+            "average": 0.05019059433053319,
+            "std_dev": 0.02590133547642661
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 0.05501457051809928,
+            "std_dev": 0.028795745354595278
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05501457051809928,
+            "std_dev": 0.028795745354595278
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": null,
+            "average": 0.05501457051809928,
+            "std_dev": 0.028795745354595278
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 0.06130822957905799,
+            "std_dev": 0.032075752174657836
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.06130822957905799,
+            "std_dev": 0.032075752174657836
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": null,
+            "average": 0.06130822957905799,
+            "std_dev": 0.032075752174657836
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.06917622017503712,
+            "std_dev": 0.03509884892988664
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.06917622017503712,
+            "std_dev": 0.03509884892988664
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": null,
+            "average": 0.06917622017503712,
+            "std_dev": 0.03509884892988664
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.07861529504241309,
+            "std_dev": 0.03805776986706168
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.07861529504241309,
+            "std_dev": 0.03805776986706168
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": null,
+            "average": 0.07861529504241309,
+            "std_dev": 0.03805776986706168
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.08948745346964093,
+            "std_dev": 0.04064077708978974
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.08948745346964093,
+            "std_dev": 0.04064077708978974
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": null,
+            "average": 0.08948745346964093,
+            "std_dev": 0.04064077708978974
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.10223085397439757,
+            "std_dev": 0.04315266052607831
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.10223085397439757,
+            "std_dev": 0.04315266052607831
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": null,
+            "average": 0.10223085397439757,
+            "std_dev": 0.04315266052607831
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.11828045584214524,
+            "std_dev": 0.04559276317427839
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.11828045584214524,
+            "std_dev": 0.04559276317427839
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": null,
+            "average": 0.11828045584214524,
+            "std_dev": 0.04559276317427839
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.1392454771228167,
+            "std_dev": 0.048141035609014136
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.1392454771228167,
+            "std_dev": 0.048141035609014136
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": null,
+            "average": 0.1392454771228167,
+            "std_dev": 0.048141035609014136
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.17085264848142004,
+            "std_dev": 0.05149138835460551
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.17085264848142004,
+            "std_dev": 0.05149138835460551
+        },
+        {
+            "architecture": "FldzhyanBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": null,
+            "average": 0.17085264848142004,
+            "std_dev": 0.05149138835460551
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.08417594933164606,
+            "std_dev": 0.03595676670725805
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08417594933164606,
+            "std_dev": 0.03595676670725805
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08417594933164606,
+            "std_dev": 0.03595676670725805
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.044438163994913564,
+            "std_dev": 0.02525382348448583
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.044438163994913564,
+            "std_dev": 0.02525382348448583
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.044438163994913564,
+            "std_dev": 0.02525382348448583
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.025420360952439006,
+            "std_dev": 0.018228792101770377
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025420360952439006,
+            "std_dev": 0.018228792101770377
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025420360952439006,
+            "std_dev": 0.018228792101770377
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.013482356141700284,
+            "std_dev": 0.012125808727803352
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013482356141700284,
+            "std_dev": 0.012125808727803352
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013482356141700284,
+            "std_dev": 0.012125808727803352
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.006409363395867339,
+            "std_dev": 0.007394075701115742
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006409363395867339,
+            "std_dev": 0.007394075701115742
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006409363395867339,
+            "std_dev": 0.007394075701115742
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.002505258583994285,
+            "std_dev": 0.003948678653759563
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002505258583994285,
+            "std_dev": 0.003948678653759563
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002505258583994285,
+            "std_dev": 0.003948678653759563
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0007575291943195143,
+            "std_dev": 0.0017273325686507426
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007575291943195143,
+            "std_dev": 0.0017273325686507426
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007575291943195143,
+            "std_dev": 0.0017273325686507426
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.00014812508427684165,
+            "std_dev": 0.0005308974199609669
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014812508427684165,
+            "std_dev": 0.0005308974199609669
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014812508427684165,
+            "std_dev": 0.0005308974199609669
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.05,
+            "average": 9.393050883433056e-06,
+            "std_dev": 7.41541032765936e-05
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.393050883433056e-06,
+            "std_dev": 7.41541032765936e-05
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.393050883433056e-06,
+            "std_dev": 7.41541032765936e-05
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 9.011256083741868e-11,
+            "std_dev": 1.3440360664910853e-09
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 9.011256083741868e-11,
+            "std_dev": 1.3440360664910853e-09
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 9.011256083741868e-11,
+            "std_dev": 1.3440360664910853e-09
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.05,
+            "average": 9.383460880257196e-06,
+            "std_dev": 7.415893663756725e-05
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.383460880257196e-06,
+            "std_dev": 7.415893663756725e-05
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.383460880257196e-06,
+            "std_dev": 7.415893663756725e-05
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.00014207451077161991,
+            "std_dev": 0.0005239863101099993
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014207451077161991,
+            "std_dev": 0.0005239863101099993
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014207451077161991,
+            "std_dev": 0.0005239863101099993
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0007535465981660958,
+            "std_dev": 0.0017159797367052073
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007535465981660958,
+            "std_dev": 0.0017159797367052073
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007535465981660958,
+            "std_dev": 0.0017159797367052073
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.0025131539714451567,
+            "std_dev": 0.0039317177357042574
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.0025131539714451567,
+            "std_dev": 0.0039317177357042574
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.0025131539714451567,
+            "std_dev": 0.0039317177357042574
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.006350248004127901,
+            "std_dev": 0.0073572427114553226
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006350248004127901,
+            "std_dev": 0.0073572427114553226
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006350248004127901,
+            "std_dev": 0.0073572427114553226
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.013511168579229373,
+            "std_dev": 0.012154615284788992
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013511168579229373,
+            "std_dev": 0.012154615284788992
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013511168579229373,
+            "std_dev": 0.012154615284788992
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.025444980342255567,
+            "std_dev": 0.01827910180066531
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025444980342255567,
+            "std_dev": 0.01827910180066531
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025444980342255567,
+            "std_dev": 0.01827910180066531
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.04443829713261176,
+            "std_dev": 0.025253596373597826
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04443829713261176,
+            "std_dev": 0.025253596373597826
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04443829713261176,
+            "std_dev": 0.025253596373597826
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.08420120706483454,
+            "std_dev": 0.0359589064155035
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08420120706483454,
+            "std_dev": 0.0359589064155035
+        },
+        {
+            "architecture": "NEUROPULS_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08420120706483454,
+            "std_dev": 0.0359589064155035
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.08401793503517892,
+            "std_dev": 0.035817341145781716
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08401793503517892,
+            "std_dev": 0.035817341145781716
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08401793503517892,
+            "std_dev": 0.035817341145781716
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.04426070568664954,
+            "std_dev": 0.025208307813054106
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04426070568664954,
+            "std_dev": 0.025208307813054106
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04426070568664954,
+            "std_dev": 0.025208307813054106
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.025228681423016045,
+            "std_dev": 0.018096448056444312
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025228681423016045,
+            "std_dev": 0.018096448056444312
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025228681423016045,
+            "std_dev": 0.018096448056444312
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.01332641728931983,
+            "std_dev": 0.0119760597239857
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.01332641728931983,
+            "std_dev": 0.0119760597239857
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.01332641728931983,
+            "std_dev": 0.0119760597239857
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.006212725312582779,
+            "std_dev": 0.007241102235495853
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006212725312582779,
+            "std_dev": 0.007241102235495853
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006212725312582779,
+            "std_dev": 0.007241102235495853
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.002446165216233902,
+            "std_dev": 0.003901969694325757
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002446165216233902,
+            "std_dev": 0.003901969694325757
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002446165216233902,
+            "std_dev": 0.003901969694325757
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0007319335206547443,
+            "std_dev": 0.0017024827677810997
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007319335206547443,
+            "std_dev": 0.0017024827677810997
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007319335206547443,
+            "std_dev": 0.0017024827677810997
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.00014006176983026914,
+            "std_dev": 0.0005210254303181156
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014006176983026914,
+            "std_dev": 0.0005210254303181156
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014006176983026914,
+            "std_dev": 0.0005210254303181156
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.05,
+            "average": 9.150210068927406e-06,
+            "std_dev": 7.36419576306804e-05
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.150210068927406e-06,
+            "std_dev": 7.36419576306804e-05
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.150210068927406e-06,
+            "std_dev": 7.36419576306804e-05
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 3.2078914026941395e-10,
+            "std_dev": 4.706398722839038e-09
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 3.2078914026941395e-10,
+            "std_dev": 4.706398722839038e-09
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 3.2078914026941395e-10,
+            "std_dev": 4.706398722839038e-09
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.05,
+            "average": 9.319667270849637e-06,
+            "std_dev": 7.374008509702702e-05
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.319667270849637e-06,
+            "std_dev": 7.374008509702702e-05
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.319667270849637e-06,
+            "std_dev": 7.374008509702702e-05
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.00013924998651699923,
+            "std_dev": 0.0005216683470099162
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00013924998651699923,
+            "std_dev": 0.0005216683470099162
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00013924998651699923,
+            "std_dev": 0.0005216683470099162
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0007404483910176033,
+            "std_dev": 0.0017031908562612106
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007404483910176033,
+            "std_dev": 0.0017031908562612106
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007404483910176033,
+            "std_dev": 0.0017031908562612106
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.002513061504787654,
+            "std_dev": 0.003940450489443364
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002513061504787654,
+            "std_dev": 0.003940450489443364
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002513061504787654,
+            "std_dev": 0.003940450489443364
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.006332549577929292,
+            "std_dev": 0.007463854695246123
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006332549577929292,
+            "std_dev": 0.007463854695246123
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006332549577929292,
+            "std_dev": 0.007463854695246123
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.013396054896897193,
+            "std_dev": 0.012119013549982424
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013396054896897193,
+            "std_dev": 0.012119013549982424
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013396054896897193,
+            "std_dev": 0.012119013549982424
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.02532822296683049,
+            "std_dev": 0.01821246495473884
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.02532822296683049,
+            "std_dev": 0.01821246495473884
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.02532822296683049,
+            "std_dev": 0.01821246495473884
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.044267927933322564,
+            "std_dev": 0.025167073031629676
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.044267927933322564,
+            "std_dev": 0.025167073031629676
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.044267927933322564,
+            "std_dev": 0.025167073031629676
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.08402701977268397,
+            "std_dev": 0.035832518828649323
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08402701977268397,
+            "std_dev": 0.035832518828649323
+        },
+        {
+            "architecture": "NEUROPULSCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08402701977268397,
+            "std_dev": 0.035832518828649323
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.08413108653469091,
+            "std_dev": 0.03578183050793578
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08413108653469091,
+            "std_dev": 0.03578183050793578
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.08413108653469091,
+            "std_dev": 0.03578183050793578
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.04430392657331589,
+            "std_dev": 0.02522958346006239
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04430392657331589,
+            "std_dev": 0.02522958346006239
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04430392657331589,
+            "std_dev": 0.02522958346006239
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.025320895801716085,
+            "std_dev": 0.018308702459010763
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025320895801716085,
+            "std_dev": 0.018308702459010763
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025320895801716085,
+            "std_dev": 0.018308702459010763
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.013452255057912005,
+            "std_dev": 0.012334191387033979
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013452255057912005,
+            "std_dev": 0.012334191387033979
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.013452255057912005,
+            "std_dev": 0.012334191387033979
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.006295708301350779,
+            "std_dev": 0.0073448102900063456
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006295708301350779,
+            "std_dev": 0.0073448102900063456
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006295708301350779,
+            "std_dev": 0.0073448102900063456
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.002475915863707577,
+            "std_dev": 0.003901585609068022
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002475915863707577,
+            "std_dev": 0.003901585609068022
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002475915863707577,
+            "std_dev": 0.003901585609068022
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0007664040423300758,
+            "std_dev": 0.0017449804574057478
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007664040423300758,
+            "std_dev": 0.0017449804574057478
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007664040423300758,
+            "std_dev": 0.0017449804574057478
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.00014114307812725978,
+            "std_dev": 0.0005240249179621772
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014114307812725978,
+            "std_dev": 0.0005240249179621772
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014114307812725978,
+            "std_dev": 0.0005240249179621772
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.05,
+            "average": 9.365585025805404e-06,
+            "std_dev": 7.413461855442909e-05
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.365585025805404e-06,
+            "std_dev": 7.413461855442909e-05
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.365585025805404e-06,
+            "std_dev": 7.413461855442909e-05
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 1.2247197666486117e-10,
+            "std_dev": 1.904846903088667e-09
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 1.2247197666486117e-10,
+            "std_dev": 1.904846903088667e-09
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 1.2247197666486117e-10,
+            "std_dev": 1.904846903088667e-09
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.05,
+            "average": 9.447183611428102e-06,
+            "std_dev": 7.416776490677421e-05
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.447183611428102e-06,
+            "std_dev": 7.416776490677421e-05
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 9.447183611428102e-06,
+            "std_dev": 7.416776490677421e-05
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.00014261948561391507,
+            "std_dev": 0.0005264266324386536
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014261948561391507,
+            "std_dev": 0.0005264266324386536
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.00014261948561391507,
+            "std_dev": 0.0005264266324386536
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0007489376780026046,
+            "std_dev": 0.0017284866133249499
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007489376780026046,
+            "std_dev": 0.0017284866133249499
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0007489376780026046,
+            "std_dev": 0.0017284866133249499
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.002517171336041536,
+            "std_dev": 0.003991669477938468
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002517171336041536,
+            "std_dev": 0.003991669477938468
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.002517171336041536,
+            "std_dev": 0.003991669477938468
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.006333457633716179,
+            "std_dev": 0.007418014326380678
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006333457633716179,
+            "std_dev": 0.007418014326380678
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.006333457633716179,
+            "std_dev": 0.007418014326380678
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.01341082209017694,
+            "std_dev": 0.012258704291659274
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.01341082209017694,
+            "std_dev": 0.012258704291659274
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.01341082209017694,
+            "std_dev": 0.012258704291659274
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.025293818610056123,
+            "std_dev": 0.018218536380321653
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025293818610056123,
+            "std_dev": 0.018218536380321653
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.025293818610056123,
+            "std_dev": 0.018218536380321653
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.04430011028957308,
+            "std_dev": 0.02521791376457094
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04430011028957308,
+            "std_dev": 0.02521791376457094
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04430011028957308,
+            "std_dev": 0.02521791376457094
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.0841305886071615,
+            "std_dev": 0.0357825858931032
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.0841305886071615,
+            "std_dev": 0.0357825858931032
+        },
+        {
+            "architecture": "NEUROPULSBell_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.0841305886071615,
+            "std_dev": 0.0357825858931032
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.09187954762420697,
+            "std_dev": 0.03780046127381715
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.09187954762420697,
+            "std_dev": 0.03780046127381715
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.09187954762420697,
+            "std_dev": 0.03780046127381715
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.048724532350265616,
+            "std_dev": 0.026494087579024297
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.048724532350265616,
+            "std_dev": 0.026494087579024297
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.048724532350265616,
+            "std_dev": 0.026494087579024297
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.02729328776731333,
+            "std_dev": 0.018608866703082143
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.02729328776731333,
+            "std_dev": 0.018608866703082143
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.02729328776731333,
+            "std_dev": 0.018608866703082143
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.014945654261580801,
+            "std_dev": 0.012519569222973691
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.014945654261580801,
+            "std_dev": 0.012519569222973691
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.014945654261580801,
+            "std_dev": 0.012519569222973691
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.007804739363137425,
+            "std_dev": 0.007689170481811552
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.007804739363137425,
+            "std_dev": 0.007689170481811552
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.007804739363137425,
+            "std_dev": 0.007689170481811552
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.003979247507043965,
+            "std_dev": 0.004434955492983702
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.003979247507043965,
+            "std_dev": 0.004434955492983702
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.003979247507043965,
+            "std_dev": 0.004434955492983702
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0022904264549857833,
+            "std_dev": 0.00249682106017958
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0022904264549857833,
+            "std_dev": 0.00249682106017958
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0022904264549857833,
+            "std_dev": 0.00249682106017958
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.0017028602828219111,
+            "std_dev": 0.0019358161690360787
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.0017028602828219111,
+            "std_dev": 0.0019358161690360787
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.0017028602828219111,
+            "std_dev": 0.0019358161690360787
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.0024381704058552126,
+            "std_dev": 0.003043472597060853
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.0024381704058552126,
+            "std_dev": 0.003043472597060853
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.0024381704058552126,
+            "std_dev": 0.003043472597060853
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.0044787114166975825,
+            "std_dev": 0.004035637372132717
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.0044787114166975825,
+            "std_dev": 0.004035637372132717
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.0044787114166975825,
+            "std_dev": 0.004035637372132717
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.002548284031524941,
+            "std_dev": 0.003106059728233314
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.002548284031524941,
+            "std_dev": 0.003106059728233314
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.002548284031524941,
+            "std_dev": 0.003106059728233314
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.0017838238191307655,
+            "std_dev": 0.002278950300506109
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.0017838238191307655,
+            "std_dev": 0.002278950300506109
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.0017838238191307655,
+            "std_dev": 0.002278950300506109
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.002261866323475822,
+            "std_dev": 0.0025314266403924255
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.002261866323475822,
+            "std_dev": 0.0025314266403924255
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.002261866323475822,
+            "std_dev": 0.0025314266403924255
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.003947900523286818,
+            "std_dev": 0.004512589845805951
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.003947900523286818,
+            "std_dev": 0.004512589845805951
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.003947900523286818,
+            "std_dev": 0.004512589845805951
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.007827982132319214,
+            "std_dev": 0.007837713779094098
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.007827982132319214,
+            "std_dev": 0.007837713779094098
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.007827982132319214,
+            "std_dev": 0.007837713779094098
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.0150313407639747,
+            "std_dev": 0.012436529634980082
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0150313407639747,
+            "std_dev": 0.012436529634980082
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0150313407639747,
+            "std_dev": 0.012436529634980082
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.027197253086661016,
+            "std_dev": 0.01858070407164527
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.027197253086661016,
+            "std_dev": 0.01858070407164527
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.027197253086661016,
+            "std_dev": 0.01858070407164527
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.04884370945092365,
+            "std_dev": 0.02654091370576032
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04884370945092365,
+            "std_dev": 0.02654091370576032
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.04884370945092365,
+            "std_dev": 0.02654091370576032
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.09192249155352128,
+            "std_dev": 0.037805411671844466
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.09192249155352128,
+            "std_dev": 0.037805411671844466
+        },
+        {
+            "architecture": "NEUROPULSBell_CrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.09192249155352128,
+            "std_dev": 0.037805411671844466
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.13352989710341207,
+            "std_dev": 0.04401224068698347
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13352989710341207,
+            "std_dev": 0.04401224068698347
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13352989710341207,
+            "std_dev": 0.04401224068698347
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.09562220536380339,
+            "std_dev": 0.03551781701781169
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09562220536380339,
+            "std_dev": 0.03551781701781169
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09562220536380339,
+            "std_dev": 0.03551781701781169
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.07587962523578415,
+            "std_dev": 0.03181749671970129
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07587962523578415,
+            "std_dev": 0.03181749671970129
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07587962523578415,
+            "std_dev": 0.03181749671970129
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.0650320111653762,
+            "std_dev": 0.030773348371555237
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0650320111653762,
+            "std_dev": 0.030773348371555237
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0650320111653762,
+            "std_dev": 0.030773348371555237
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.05924969785605275,
+            "std_dev": 0.03082955217926059
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05924969785605275,
+            "std_dev": 0.03082955217926059
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05924969785605275,
+            "std_dev": 0.03082955217926059
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.056346961102126635,
+            "std_dev": 0.031133560646235067
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.056346961102126635,
+            "std_dev": 0.031133560646235067
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.056346961102126635,
+            "std_dev": 0.031133560646235067
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.055080379124638576,
+            "std_dev": 0.03138040073094952
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.055080379124638576,
+            "std_dev": 0.03138040073094952
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.055080379124638576,
+            "std_dev": 0.03138040073094952
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.05465823276918793,
+            "std_dev": 0.03150203156151331
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05465823276918793,
+            "std_dev": 0.03150203156151331
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05465823276918793,
+            "std_dev": 0.03150203156151331
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.05457731484240402,
+            "std_dev": 0.03152414584880538
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05457731484240402,
+            "std_dev": 0.03152414584880538
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05457731484240402,
+            "std_dev": 0.03152414584880538
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.054574392950924186,
+            "std_dev": 0.03152273356277534
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.054574392950924186,
+            "std_dev": 0.03152273356277534
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.054574392950924186,
+            "std_dev": 0.03152273356277534
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.05457731527004725,
+            "std_dev": 0.0315241462890955
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05457731527004725,
+            "std_dev": 0.0315241462890955
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05457731527004725,
+            "std_dev": 0.0315241462890955
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.054658232353487435,
+            "std_dev": 0.031502031326709756
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.054658232353487435,
+            "std_dev": 0.031502031326709756
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.054658232353487435,
+            "std_dev": 0.031502031326709756
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.05508037849498565,
+            "std_dev": 0.03138040045304014
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.05508037849498565,
+            "std_dev": 0.03138040045304014
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.05508037849498565,
+            "std_dev": 0.03138040045304014
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.05634696073163154,
+            "std_dev": 0.03113356056785853
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05634696073163154,
+            "std_dev": 0.03113356056785853
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05634696073163154,
+            "std_dev": 0.03113356056785853
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.05924969847475732,
+            "std_dev": 0.030829552529252627
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05924969847475732,
+            "std_dev": 0.030829552529252627
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05924969847475732,
+            "std_dev": 0.030829552529252627
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.06503201081665168,
+            "std_dev": 0.030773348178817755
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06503201081665168,
+            "std_dev": 0.030773348178817755
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06503201081665168,
+            "std_dev": 0.030773348178817755
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.07587965835544687,
+            "std_dev": 0.031819198667697286
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07587965835544687,
+            "std_dev": 0.031819198667697286
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07587965835544687,
+            "std_dev": 0.031819198667697286
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.0956239084271893,
+            "std_dev": 0.035522634702648874
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.0956239084271893,
+            "std_dev": 0.035522634702648874
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.0956239084271893,
+            "std_dev": 0.035522634702648874
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.13352989724891137,
+            "std_dev": 0.044012240777369586
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13352989724891137,
+            "std_dev": 0.044012240777369586
+        },
+        {
+            "architecture": "NEUROPULSHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13352989724891137,
+            "std_dev": 0.044012240777369586
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.13326911054035342,
+            "std_dev": 0.044154579972354266
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13326911054035342,
+            "std_dev": 0.044154579972354266
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13326911054035342,
+            "std_dev": 0.044154579972354266
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.09540000687443995,
+            "std_dev": 0.0356989068024706
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09540000687443995,
+            "std_dev": 0.0356989068024706
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09540000687443995,
+            "std_dev": 0.0356989068024706
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.07569461745787931,
+            "std_dev": 0.03190981267596244
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07569461745787931,
+            "std_dev": 0.03190981267596244
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07569461745787931,
+            "std_dev": 0.03190981267596244
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.0649083285667974,
+            "std_dev": 0.030809995596083415
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0649083285667974,
+            "std_dev": 0.030809995596083415
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.0649083285667974,
+            "std_dev": 0.030809995596083415
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.059160236606656605,
+            "std_dev": 0.03081656307542419
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.059160236606656605,
+            "std_dev": 0.03081656307542419
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.059160236606656605,
+            "std_dev": 0.03081656307542419
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.05627099887080043,
+            "std_dev": 0.031095080636920437
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05627099887080043,
+            "std_dev": 0.031095080636920437
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05627099887080043,
+            "std_dev": 0.031095080636920437
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0550178861143328,
+            "std_dev": 0.031331816089043944
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0550178861143328,
+            "std_dev": 0.031331816089043944
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0550178861143328,
+            "std_dev": 0.031331816089043944
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.05460099722929974,
+            "std_dev": 0.03145071198761386
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05460099722929974,
+            "std_dev": 0.03145071198761386
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05460099722929974,
+            "std_dev": 0.03145071198761386
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.054521144448683535,
+            "std_dev": 0.03147242685720248
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.054521144448683535,
+            "std_dev": 0.03147242685720248
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.054521144448683535,
+            "std_dev": 0.03147242685720248
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.05451826109131706,
+            "std_dev": 0.03147102543035027
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.05451826109131706,
+            "std_dev": 0.03147102543035027
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.05451826109131706,
+            "std_dev": 0.03147102543035027
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.05452114438794824,
+            "std_dev": 0.031472426694048934
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05452114438794824,
+            "std_dev": 0.031472426694048934
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05452114438794824,
+            "std_dev": 0.031472426694048934
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.05460099729554471,
+            "std_dev": 0.03145071185494208
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05460099729554471,
+            "std_dev": 0.03145071185494208
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05460099729554471,
+            "std_dev": 0.03145071185494208
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.05501788612230144,
+            "std_dev": 0.03133181612799188
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.05501788612230144,
+            "std_dev": 0.03133181612799188
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.05501788612230144,
+            "std_dev": 0.03133181612799188
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.05627099866984803,
+            "std_dev": 0.031095080670239448
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05627099866984803,
+            "std_dev": 0.031095080670239448
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05627099866984803,
+            "std_dev": 0.031095080670239448
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.05915214617901196,
+            "std_dev": 0.03081432313743581
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05915214617901196,
+            "std_dev": 0.03081432313743581
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05915214617901196,
+            "std_dev": 0.03081432313743581
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.06489994848602723,
+            "std_dev": 0.030801272422166848
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06489994848602723,
+            "std_dev": 0.030801272422166848
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06489994848602723,
+            "std_dev": 0.030801272422166848
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.07569019917617703,
+            "std_dev": 0.03190327105225482
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07569019917617703,
+            "std_dev": 0.03190327105225482
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07569019917617703,
+            "std_dev": 0.03190327105225482
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.09538457568166145,
+            "std_dev": 0.03566482422697318
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09538457568166145,
+            "std_dev": 0.03566482422697318
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09538457568166145,
+            "std_dev": 0.03566482422697318
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.1332239637823641,
+            "std_dev": 0.044050174370604864
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.1332239637823641,
+            "std_dev": 0.044050174370604864
+        },
+        {
+            "architecture": "NEUROPULSBellHalf_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.1332239637823641,
+            "std_dev": 0.044050174370604864
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.13640258794655513,
+            "std_dev": 0.045194636459637776
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13640258794655513,
+            "std_dev": 0.045194636459637776
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.13640258794655513,
+            "std_dev": 0.045194636459637776
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.0976236106972062,
+            "std_dev": 0.036465953836597245
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.0976236106972062,
+            "std_dev": 0.036465953836597245
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.0976236106972062,
+            "std_dev": 0.036465953836597245
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.07706768455779721,
+            "std_dev": 0.03226246157350705
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07706768455779721,
+            "std_dev": 0.03226246157350705
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.07706768455779721,
+            "std_dev": 0.03226246157350705
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.06581421205401126,
+            "std_dev": 0.03094705617251315
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06581421205401126,
+            "std_dev": 0.03094705617251315
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06581421205401126,
+            "std_dev": 0.03094705617251315
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.059860248757005116,
+            "std_dev": 0.03080309477341605
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.059860248757005116,
+            "std_dev": 0.03080309477341605
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.059860248757005116,
+            "std_dev": 0.03080309477341605
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.05689592436114441,
+            "std_dev": 0.031073177863558066
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05689592436114441,
+            "std_dev": 0.031073177863558066
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05689592436114441,
+            "std_dev": 0.031073177863558066
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.0557840818511574,
+            "std_dev": 0.031304749328053834
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0557840818511574,
+            "std_dev": 0.031304749328053834
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.0557840818511574,
+            "std_dev": 0.031304749328053834
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.05561598527775412,
+            "std_dev": 0.03154175526518738
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05561598527775412,
+            "std_dev": 0.03154175526518738
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.05561598527775412,
+            "std_dev": 0.03154175526518738
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.05636335242266659,
+            "std_dev": 0.03163293463355466
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05636335242266659,
+            "std_dev": 0.03163293463355466
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": -0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05636335242266659,
+            "std_dev": 0.03163293463355466
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.0580839776523653,
+            "std_dev": 0.03154332454304074
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.0580839776523653,
+            "std_dev": 0.03154332454304074
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": 0.0,
+            "average": 0.0580839776523653,
+            "std_dev": 0.03154332454304074
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.05,
+            "average": 0.05652212062120301,
+            "std_dev": 0.03158385864953339
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05652212062120301,
+            "std_dev": 0.03158385864953339
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.05,
+            "cross_talk_const": 0.0,
+            "average": 0.05652212062120301,
+            "std_dev": 0.03158385864953339
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.1,
+            "average": 0.055699158898016896,
+            "std_dev": 0.03145848881568823
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.055699158898016896,
+            "std_dev": 0.03145848881568823
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.1,
+            "cross_talk_const": 0.0,
+            "average": 0.055699158898016896,
+            "std_dev": 0.03145848881568823
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.15,
+            "average": 0.05584482131246638,
+            "std_dev": 0.031272422595762336
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.05584482131246638,
+            "std_dev": 0.031272422595762336
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.15,
+            "cross_talk_const": 0.0,
+            "average": 0.05584482131246638,
+            "std_dev": 0.031272422595762336
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.2,
+            "average": 0.05691252223581449,
+            "std_dev": 0.031085342397584752
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05691252223581449,
+            "std_dev": 0.031085342397584752
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.2,
+            "cross_talk_const": 0.0,
+            "average": 0.05691252223581449,
+            "std_dev": 0.031085342397584752
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.25,
+            "average": 0.05982702916291047,
+            "std_dev": 0.03081792073043458
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05982702916291047,
+            "std_dev": 0.03081792073043458
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.25,
+            "cross_talk_const": 0.0,
+            "average": 0.05982702916291047,
+            "std_dev": 0.03081792073043458
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.3,
+            "average": 0.06580529362966503,
+            "std_dev": 0.03093443808114832
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06580529362966503,
+            "std_dev": 0.03093443808114832
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.3,
+            "cross_talk_const": 0.0,
+            "average": 0.06580529362966503,
+            "std_dev": 0.03093443808114832
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.35,
+            "average": 0.0770508843157036,
+            "std_dev": 0.03228058857988307
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.0770508843157036,
+            "std_dev": 0.03228058857988307
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.35,
+            "cross_talk_const": 0.0,
+            "average": 0.0770508843157036,
+            "std_dev": 0.03228058857988307
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.4,
+            "average": 0.09764052211468166,
+            "std_dev": 0.03645470822450498
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09764052211468166,
+            "std_dev": 0.03645470822450498
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.4,
+            "cross_talk_const": 0.0,
+            "average": 0.09764052211468166,
+            "std_dev": 0.03645470822450498
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.45,
+            "average": 0.1364048364025758,
+            "std_dev": 0.04519144826495169
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.1364048364025758,
+            "std_dev": 0.04519144826495169
+        },
+        {
+            "architecture": "NEUROPULSBellHalfCrossingSide_Arct",
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.45,
+            "cross_talk_const": 0.0,
+            "average": 0.1364048364025758,
+            "std_dev": 0.04519144826495169
+        }
+    ]
+}
