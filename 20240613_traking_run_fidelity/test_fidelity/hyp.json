@@ -1,0 +1,10 @@
+{
+  "runs": [
+    {"n_inputs": 8,
+    "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+    "i_loss": 0.4, "imbalance": 0.0, "cross_talk": 0.0, "folder_path": "outdata/"},
+    {"n_inputs": 8,
+    "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+    "i_loss": 0.4, "imbalance": 0.0, "cross_talk": 0.0, "folder_path": "outdata/"}
+  ]
+}

@@ -4,7 +4,7 @@
         {
             "label": "Run Shell Script",
             "type": "shell",
-            "command": "./20240601_traking_new_runs/test_run_cossim_myPC/run_python_myPC.sh",
+            "command": "./20240613_traking_run_fidelity/test_fidelity/run_python_myPC.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
