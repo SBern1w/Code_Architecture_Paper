@@ -296,7 +296,7 @@ if __name__ == "__main__":
     n_bachup = 500
 
     folder_path = args.folder_path
-    name_folder_out = 'n'+str(n_inputs)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_crosstalk'+str(cross_talk)+'_HPC_simulation/'
+    name_folder_out = 'n'+str(n_inputs)+'_pciloss'+str(pc_iloss)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_crosstalk'+str(cross_talk)+'_HPC_simulation/'
     # =============================================================================================================
     # =============================================================================================================
     # =============================================================================================================
