@@ -1,0 +1,689 @@
+{
+    "name_file": "traking_NEUROPULS_Arct_N8",
+    "arct": "NEUROPULS_Arct",
+    "n_inputs": 8,
+    "n_epochs": 22000,
+    "date": "20240619",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 5,
+    "lr": 0.001,
+    "n_bachup": 500,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9790073870716149,
+            "std_dev": 0.0028041589263150778
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -1000.0,
+            "average": 0.9993581615011141,
+            "std_dev": 0.00013737290349340476
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8905526033249195,
+            "std_dev": 0.013712870779660876
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9796279422826744,
+            "std_dev": 0.002881384906377036
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -1000.0,
+            "average": 0.9999970740576338,
+            "std_dev": 2.263547570371999e-05
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8926651169729904,
+            "std_dev": 0.01350401431783354
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9775803850314474,
+            "std_dev": 0.002908056532175906
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -1000.0,
+            "average": 0.997579317413408,
+            "std_dev": 0.00046844465940700935
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8884994926374166,
+            "std_dev": 0.013161725615951188
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.97214302073367,
+            "std_dev": 0.0033786413450076352
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -1000.0,
+            "average": 0.9909488773356109,
+            "std_dev": 0.0015302291379181779
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.0,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8822975571018313,
+            "std_dev": 0.013327814642278413
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9790412384850303,
+            "std_dev": 0.0028248645128226657
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -1000.0,
+            "average": 0.9993564427029935,
+            "std_dev": 0.00013731904934214043
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8904978457970701,
+            "std_dev": 0.013009296822009164
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9797698337203333,
+            "std_dev": 0.002920823276386718
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -1000.0,
+            "average": 0.9999966490626419,
+            "std_dev": 2.3927330346900896e-05
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8932147272914162,
+            "std_dev": 0.013291785048667853
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.977309795836079,
+            "std_dev": 0.0028831391313729085
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -1000.0,
+            "average": 0.9975821501205374,
+            "std_dev": 0.0004520692335748885
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8879946361903799,
+            "std_dev": 0.012786636401065523
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9719898748597898,
+            "std_dev": 0.003401935152899358
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -1000.0,
+            "average": 0.991033383697195,
+            "std_dev": 0.001489977372227506
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.34762106259212,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8816287720918874,
+            "std_dev": 0.013183552172203176
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9789275195910786,
+            "std_dev": 0.002832227397449174
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -1000.0,
+            "average": 0.9993424816367746,
+            "std_dev": 0.00013395979632178985
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8909843207392614,
+            "std_dev": 0.01302098286496416
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9797897359546338,
+            "std_dev": 0.0027183331357910124
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -1000.0,
+            "average": 0.9999941342282501,
+            "std_dev": 2.4154701060123578e-05
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8929169367039097,
+            "std_dev": 0.013612981054473802
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9772926238495127,
+            "std_dev": 0.0030006696172733575
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -1000.0,
+            "average": 0.9975532837216967,
+            "std_dev": 0.0004570230976174995
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8883296833637547,
+            "std_dev": 0.012904571237581016
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9718078445384176,
+            "std_dev": 0.003520972206923576
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -1000.0,
+            "average": 0.9908707947375764,
+            "std_dev": 0.0015507204159136213
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 0.6963592814139448,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8816232984712935,
+            "std_dev": 0.013403098904423804
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9790083837161693,
+            "std_dev": 0.0028890986326397562
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -1000.0,
+            "average": 0.9993190293849888,
+            "std_dev": 0.00014837109895352637
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8908933099474651,
+            "std_dev": 0.013396021859219072
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9797388534446048,
+            "std_dev": 0.0030322817470772533
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -1000.0,
+            "average": 0.9999838722919498,
+            "std_dev": 5.7900610028549245e-05
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.892636677524541,
+            "std_dev": 0.01319658267843419
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9773731046650077,
+            "std_dev": 0.003018054537117257
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -1000.0,
+            "average": 0.9974723886027104,
+            "std_dev": 0.0004838516164204208
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8884228939965774,
+            "std_dev": 0.01340550823601827
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9714827957417228,
+            "std_dev": 0.0034445731547008986
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -1000.0,
+            "average": 0.9907574649784628,
+            "std_dev": 0.001532119198394832
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.0473535052001306,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8807544946015358,
+            "std_dev": 0.013158310636405402
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9787790230593805,
+            "std_dev": 0.0028735597469139685
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -1000.0,
+            "average": 0.9992565302079387,
+            "std_dev": 0.0001773643738016811
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8901279825625142,
+            "std_dev": 0.013456528851081931
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9796287851116521,
+            "std_dev": 0.0028552297594951637
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -1000.0,
+            "average": 0.9999647115591838,
+            "std_dev": 9.132362464484547e-05
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8922507464089788,
+            "std_dev": 0.01304300940816818
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9770445945345075,
+            "std_dev": 0.0030482506022162163
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -1000.0,
+            "average": 0.9973555193235097,
+            "std_dev": 0.0005007684083139324
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.887415005235333,
+            "std_dev": 0.013076621008949432
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9711442546875583,
+            "std_dev": 0.0036389070770679348
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -1000.0,
+            "average": 0.9904585662399101,
+            "std_dev": 0.0015637992113804939
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.401787031650368,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8814086657261848,
+            "std_dev": 0.01337648723905478
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.978430094063059,
+            "std_dev": 0.0030835318346668136
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -1000.0,
+            "average": 0.9991692709892745,
+            "std_dev": 0.0002319004047458319
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8901676856145732,
+            "std_dev": 0.01310550024977628
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9795056558701583,
+            "std_dev": 0.002969685617939238
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -1000.0,
+            "average": 0.9999169261357739,
+            "std_dev": 0.00015578500867472318
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8926977358286394,
+            "std_dev": 0.013512185325122297
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9766200353700543,
+            "std_dev": 0.0030745136490951453
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -1000.0,
+            "average": 0.9971670122036257,
+            "std_dev": 0.0005523716392362236
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8876144211251256,
+            "std_dev": 0.013378696282813763
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9705815344506088,
+            "std_dev": 0.003622576886443695
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -1000.0,
+            "average": 0.9899738500240304,
+            "std_dev": 0.0016775279656870202
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 1.7609125905568117,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8805132919990284,
+            "std_dev": 0.013369475848689088
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9737997492147443,
+            "std_dev": 0.0043108800143666515
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -1000.0,
+            "average": 0.9967587752427399,
+            "std_dev": 0.001917718733053445
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.22276394711152253,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8852743004629903,
+            "std_dev": 0.014581607766122131
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9752062417528445,
+            "std_dev": 0.004269363532340628
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -1000.0,
+            "average": 0.9975869756119577,
+            "std_dev": 0.0019890529443528067
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": 0.0,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8879962007396038,
+            "std_dev": 0.014690821759946793
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9713705755156591,
+            "std_dev": 0.004602909004960756
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -1000.0,
+            "average": 0.9940694397020933,
+            "std_dev": 0.001994563656183888
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.4575749056067512,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8814540149043277,
+            "std_dev": 0.014627306022018968
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -19.9563519459755,
+            "average": 0.9633143418182244,
+            "std_dev": 0.005163616895440736
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -1000.0,
+            "average": 0.9837424102275293,
+            "std_dev": 0.0029954453121755296
+        },
+        {
+            "PC_i_loss_const": null,
+            "i_loss_const": -0.969100130080564,
+            "imbalance_const": 3.679767852945944,
+            "cross_talk_const": -9.542425094393248,
+            "average": 0.8734032777681207,
+            "std_dev": 0.01443835813805299
+        }
+    ]
+}

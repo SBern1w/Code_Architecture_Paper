@@ -10,7 +10,7 @@
     "lr": 0.001,
     "n_bachup": 500,
     "data_out_type": "Fidelity",
-    "rep_type": "min",
+    "rep_type": "max",
     "simulations": [
         {
             "architecture": "Clements_Arct",
