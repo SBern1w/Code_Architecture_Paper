@@ -11,6 +11,8 @@ import argparse
 import json
 import sys
 from mpi4py import MPI
+import time
+from datetime import timedelta
 import numpy as np
 from scipy.stats import unitary_group
 import tqdm
@@ -55,6 +57,11 @@ class FidelityUnitary(nn.Module):
 
 # Model -----------------------------------------------------------------------------------------------------------
 def select_model(name_model):
+    pc_i_losses_mtx_even = torch.full((n_inputs, n_inputs), pc_iloss)
+    pc_i_losses_mtx_odd = torch.full((n_inputs, n_inputs), pc_iloss)
+    pc_i_losses_mtx_inout = torch.full((2, n_inputs), pc_iloss)
+    pc_i_losses_mtx_full = torch.full((n_inputs, n_inputs), pc_iloss)
+    pc_i_losses_mtx_side = torch.full((n_inputs//2, n_inputs), pc_iloss)
     mmi_i_losses_mtx_even = torch.full((2*(n_inputs-1), n_inputs//2), i_loss)
     mmi_i_losses_mtx_odd = torch.full((n_inputs, n_inputs//2-1), i_loss)
     mmi_imbalances_mtx_even = torch.full((2*(n_inputs-1), n_inputs//2), imbalance)
@@ -66,6 +73,9 @@ def select_model(name_model):
     if name_model == 'Clements_Arct':
         model = Clements_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_even=pc_i_losses_mtx_even,
+            pc_i_losses_mtx_odd=pc_i_losses_mtx_odd,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_inout,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_i_losses_mtx_odd=mmi_i_losses_mtx_odd,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
@@ -73,6 +83,8 @@ def select_model(name_model):
     elif name_model == 'ClementsBell_Arct':
         model = ClementsBell_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_inout,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_i_losses_mtx_odd=mmi_i_losses_mtx_odd,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
@@ -80,6 +92,9 @@ def select_model(name_model):
     elif name_model == 'Fldzhyan_Arct':
         model = Fldzhyan_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_even=pc_i_losses_mtx_even,
+            pc_i_losses_mtx_odd=pc_i_losses_mtx_odd,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_inout,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_i_losses_mtx_odd=mmi_i_losses_mtx_odd,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
@@ -87,6 +102,8 @@ def select_model(name_model):
     elif name_model == 'FldzhyanBell_Arct':
         model = FldzhyanBell_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_i_losses_mtx_odd=mmi_i_losses_mtx_odd,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
@@ -94,6 +111,8 @@ def select_model(name_model):
     elif name_model == 'FldzhyanBellHalf_Arct':
         model = FldzhyanBellHalf_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_i_losses_mtx_odd=mmi_i_losses_mtx_odd,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
@@ -101,6 +120,8 @@ def select_model(name_model):
     elif name_model == 'NEUROPULS_Arct':
         model = NEUROPULS_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_even=pc_i_losses_mtx_even,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_even,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd,
@@ -108,6 +129,8 @@ def select_model(name_model):
     elif name_model == 'NEUROPULSCrossingSide_Arct':
         model = NEUROPULSCrossingSide_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_even=pc_i_losses_mtx_even,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_even,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd_side,
@@ -115,6 +138,9 @@ def select_model(name_model):
     elif name_model == 'NEUROPULSBell_Arct':
         model = NEUROPULSBell_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_side=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd,
@@ -122,6 +148,8 @@ def select_model(name_model):
     elif name_model == 'NEUROPULSBellCrossingSide_Arct':
         model = NEUROPULSBellCrossingSide_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd_side,
@@ -129,6 +157,8 @@ def select_model(name_model):
     elif name_model == 'NEUROPULSHalf_Arct':
         model = NEUROPULSHalf_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_even=pc_i_losses_mtx_even,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_even,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd,
@@ -136,6 +166,9 @@ def select_model(name_model):
     elif name_model == 'NEUROPULSBellHalf_Arct':
         model = NEUROPULSBellHalf_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_side=pc_i_losses_mtx_side,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_inout,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd,
@@ -143,6 +176,8 @@ def select_model(name_model):
     elif name_model == 'NEUROPULSBellHalfCrossingSide_Arct':
         model = NEUROPULSBellHalfCrossingSide_Arct(
             n_inputs=n_inputs,
+            pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
             crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd_side,
@@ -216,9 +251,12 @@ def parse_architectures(architectures):
 
 # =================================================== Main ========================================================
 if __name__ == "__main__":
+    start_time = time.time()
+    
     parser = argparse.ArgumentParser(description='Process the hyperparameters.')
     parser.add_argument('--n_inputs', required=True, help='n_inputs')
     parser.add_argument('--arct', required=True, help='arct')
+    parser.add_argument('--pc_iloss', required=True, help='pc_iloss')
     parser.add_argument('--i_loss', required=True, help='i_loss')
     parser.add_argument('--imbalance', required=True, help='imbalance')
     parser.add_argument('--cross_talk', required=True, help='cross_talk')
@@ -247,13 +285,12 @@ if __name__ == "__main__":
     #                'NEUROPULS_Arct', 'NEUROPULSCrossingSide_Arct', 'NEUROPULSBell_Arct', 'NEUROPULSBellCrossingSide_Arct',
     #                'NEUROPULSHalf_Arct', 'NEUROPULSBellHalf_Arct', 'NEUROPULSBellHalfCrossingSide_Arct']
     name_models = parse_architectures(args.arct)
-
-    print(name_models)
     
     # CONSTANT LOSS
-    i_loss = float(args.i_loss)             # from 0 min to 1 max
-    imbalance = float(args.imbalance)       # from -0.5 min to 0.5 max
-    cross_talk = float(args.cross_talk)     # from 0 min to 1 max
+    pc_iloss = 10**(float(args.pc_iloss)/10)     # =P_out/P_in. 0dB pefect component, -100dB very lossy
+    i_loss = 10**(float(args.i_loss)/10)         # =P_out/P_in. 0dB pefect component, -100dB very lossy
+    imbalance = 10**(float(args.imbalance)/10)   # =P_outmax/P_outmin. 0dB 50/50 MMI, 100dB all power to outUP, -100dB all power to outDOWN
+    cross_talk = 10**(float(args.cross_talk)/10) # =P_leakout/P_otherout. -infdB Crossing perfect, -1dB very bad device a lot power leak
 
     # If RAM too full decrease and fail with kill problem -> Decrease this number
     n_bachup = 500
@@ -317,7 +354,12 @@ if __name__ == "__main__":
         np.save(folder_path+name_folder_out+'save'+str(i//n_bachup+1)+'_CPU'+str(rank), targets_predictions_np)
         del targets_predictions_np
     
+    end_time = time.time()
+    work_duration = end_time - start_time
+    max_work_duration = comm.reduce(work_duration, op=MPI.MAX, root=0)
     if rank == 0:
+        max_duration_human_readable = str(timedelta(seconds=max_work_duration))
+        print(f"The maximum work duration is {max_duration_human_readable} (HH:MM:SS).")
         print("!!!Congratulation it has FINISH correctly!!!")
 
 

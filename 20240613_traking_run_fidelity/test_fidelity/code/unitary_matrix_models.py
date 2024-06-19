@@ -32,6 +32,9 @@ class Clements_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_even: torch.Tensor = None,
+                 pc_i_losses_mtx_odd: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_i_losses_mtx_odd: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -42,41 +45,41 @@ class Clements_Arct(nn.Module):
         self._n_layers = n_inputs
         
         # EVEN
-        self._ht_layer_even = nn.ModuleList([HeaterLayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers)])
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._pc_layer_even = nn.ModuleList([PCLayerMatrix_Even(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_even[i]) for i in range(self._n_layers)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers)])
         # ODD
-        self._ht_layer_odd = nn.ModuleList([HeaterLayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
-        if (mmi_i_losses_mtx_odd is not None) and (mmi_imbalances_mtx_odd is not None):
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_odd[i],
-                mmi_imbalances=mmi_imbalances_mtx_odd[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._pc_layer_odd = nn.ModuleList([PCLayerMatrix_Odd(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_odd[i]) for i in range(self._n_layers)])
+        self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_odd[i],
+            mmi_imbalances=mmi_imbalances_mtx_odd[i])
+            for i in range(self._n_layers)])
         # OUT
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
         for i in range(self._n_layers//2):
-            arct_matrix = self._ht_layer_even[2*i](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_even[2*i+1](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
-            arct_matrix = self._ht_layer_odd[2*i](arct_matrix)
+            arct_matrix = self._pc_layer_odd[2*i](arct_matrix)
             arct_matrix = self._mmi_layer_odd[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_odd[2*i+1](arct_matrix)
+            arct_matrix = self._pc_layer_odd[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_odd[2*i+1](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -102,6 +105,8 @@ class ClementsBell_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_i_losses_mtx_odd: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -111,41 +116,42 @@ class ClementsBell_Arct(nn.Module):
         self._n_inputs = n_inputs
         self._n_layers = n_inputs
         
-        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        # FULL
+        self._pc_layer_full = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_full[i]) for i in range(self._n_layers)])
         # EVEN
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers)])
         # ODD
-        if (mmi_i_losses_mtx_odd is not None) and (mmi_imbalances_mtx_odd is not None):
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_odd[i],
-                mmi_imbalances=mmi_imbalances_mtx_odd[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_odd[i],
+            mmi_imbalances=mmi_imbalances_mtx_odd[i])
+            for i in range(self._n_layers)])
         # IN OUT
-        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_in = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[1])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
-        arct_matrix = self._ht_layer_in(arct_matrix)
+        arct_matrix = self._pc_layer_in(arct_matrix)
         for i in range(self._n_layers//2):
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_full[2*i](arct_matrix)
+            arct_matrix = self._pc_layer_full[2*i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_odd[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_full[2*i+1](arct_matrix)
+            arct_matrix = self._pc_layer_full[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_odd[2*i+1](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -171,6 +177,9 @@ class Fldzhyan_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_even: torch.Tensor = None,
+                 pc_i_losses_mtx_odd: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_i_losses_mtx_odd: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -181,37 +190,37 @@ class Fldzhyan_Arct(nn.Module):
         self._n_layers = n_inputs
         
         # EVEN
-        self._ht_layer_even = nn.ModuleList([HeaterLayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers)])
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._pc_layer_even = nn.ModuleList([PCLayerMatrix_Even(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_even[i]) for i in range(self._n_layers)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers)])
         # ODD
-        self._ht_layer_odd = nn.ModuleList([HeaterLayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
-        if (mmi_i_losses_mtx_odd is not None) and (mmi_imbalances_mtx_odd is not None):
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_odd[i],
-                mmi_imbalances=mmi_imbalances_mtx_odd[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._pc_layer_odd = nn.ModuleList([PCLayerMatrix_Odd(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_odd[i]) for i in range(self._n_layers)])
+        self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_odd[i],
+            mmi_imbalances=mmi_imbalances_mtx_odd[i])
+            for i in range(self._n_layers)])
         # OUT
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
         for i in range(self._n_layers):
-            arct_matrix = self._ht_layer_even[i](arct_matrix)
+            arct_matrix = self._pc_layer_even[i](arct_matrix)
             arct_matrix = self._mmi_layer_even[i](arct_matrix)
-            arct_matrix = self._ht_layer_odd[i](arct_matrix)
+            arct_matrix = self._pc_layer_odd[i](arct_matrix)
             arct_matrix = self._mmi_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -237,6 +246,8 @@ class FldzhyanBell_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_i_losses_mtx_odd: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -246,38 +257,39 @@ class FldzhyanBell_Arct(nn.Module):
         self._n_inputs = n_inputs
         self._n_layers = n_inputs
         
-        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        # FULL
+        self._pc_layer_full = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_full[i]) for i in range(self._n_layers)])
         # EVEN
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers)])
         # ODD
-        if (mmi_i_losses_mtx_odd is not None) and (mmi_imbalances_mtx_odd is not None):
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_odd[i],
-                mmi_imbalances=mmi_imbalances_mtx_odd[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_odd[i],
+            mmi_imbalances=mmi_imbalances_mtx_odd[i])
+            for i in range(self._n_layers)])
         # IN OUT
-        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_in = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[1])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
-        arct_matrix = self._ht_layer_in(arct_matrix)
+        arct_matrix = self._pc_layer_in(arct_matrix)
         for i in range(self._n_layers):
             arct_matrix = self._mmi_layer_even[i](arct_matrix)
-            arct_matrix = self._ht_layer_full[i](arct_matrix)
+            arct_matrix = self._pc_layer_full[i](arct_matrix)
             arct_matrix = self._mmi_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -303,6 +315,8 @@ class FldzhyanBellHalf_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_i_losses_mtx_odd: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -312,38 +326,39 @@ class FldzhyanBellHalf_Arct(nn.Module):
         self._n_inputs = n_inputs
         self._n_layers = n_inputs//2
         
-        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        # FULL
+        self._pc_layer_full = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_full[i]) for i in range(self._n_layers)])
         # EVEN
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers)])
         # ODD
-        if (mmi_i_losses_mtx_odd is not None) and (mmi_imbalances_mtx_odd is not None):
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_odd[i],
-                mmi_imbalances=mmi_imbalances_mtx_odd[i])
-                for i in range(self._n_layers)])
-        else:
-            self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers)])
+        self._mmi_layer_odd = nn.ModuleList([MMILayerMatrix_Odd(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_odd[i],
+            mmi_imbalances=mmi_imbalances_mtx_odd[i])
+            for i in range(self._n_layers)])
         # IN OUT
-        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_in = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[1])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
-        arct_matrix = self._ht_layer_in(arct_matrix)
+        arct_matrix = self._pc_layer_in(arct_matrix)
         for i in range(self._n_layers):
             arct_matrix = self._mmi_layer_even[i](arct_matrix)
-            arct_matrix = self._ht_layer_full[i](arct_matrix)
+            arct_matrix = self._pc_layer_full[i](arct_matrix)
             arct_matrix = self._mmi_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -374,6 +389,8 @@ class NEUROPULS_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_even: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
@@ -387,39 +404,36 @@ class NEUROPULS_Arct(nn.Module):
         self._n_layers_crossing = n_inputs - 2
         
         # EVEN
-        self._ht_layer_even = nn.ModuleList([HeaterLayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers_mmi)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
+        self._pc_layer_even = nn.ModuleList([PCLayerMatrix_Even(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_even[i]) for i in range(self._n_layers_ht)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers_mmi)])
         # ODD
-        if (crossing_i_losses_mtx_odd is not None) and (crossing_crosstalks_mtx_odd is not None):
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
-                n_inputs=n_inputs,
-                crossing_i_losses=crossing_i_losses_mtx_odd[i],
-                crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
-                for i in range(self._n_layers_crossing)])
-        else:
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
-        
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
+            n_inputs=n_inputs,
+            crossing_i_losses=crossing_i_losses_mtx_odd[i],
+            crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
+            for i in range(self._n_layers_crossing)])
         # OUT
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
         for i in range(self._n_layers):
-            arct_matrix = self._ht_layer_even[2*i](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_even[2*i+1](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -449,6 +463,8 @@ class NEUROPULSCrossingSide_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_even: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
@@ -462,39 +478,36 @@ class NEUROPULSCrossingSide_Arct(nn.Module):
         self._n_layers_crossing = n_inputs - 2
         
         # EVEN
-        self._ht_layer_even = nn.ModuleList([HeaterLayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+        self._pc_layer_even = nn.ModuleList([PCLayerMatrix_Even(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_even[i]) for i in range(self._n_layers_ht)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
                 n_inputs=n_inputs,
                 mmi_i_losses=mmi_i_losses_mtx_even[i],
                 mmi_imbalances=mmi_imbalances_mtx_even[i])
                 for i in range(self._n_layers_mmi)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
         # ODD
-        if (crossing_i_losses_mtx_odd is not None) and (crossing_crosstalks_mtx_odd is not None):
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(
-                n_inputs=n_inputs,
-                crossing_i_losses=crossing_i_losses_mtx_odd[i],
-                crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
-                for i in range(self._n_layers_crossing)])
-        else:
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
-        
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(
+            n_inputs=n_inputs,
+            crossing_i_losses=crossing_i_losses_mtx_odd[i],
+            crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
+            for i in range(self._n_layers_crossing)])
         # OUT
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
         for i in range(self._n_layers):
-            arct_matrix = self._ht_layer_even[2*i](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_even[2*i+1](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -524,6 +537,9 @@ class NEUROPULSBell_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_side: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
@@ -536,43 +552,46 @@ class NEUROPULSBell_Arct(nn.Module):
         self._n_layers_mmi = 2 * (n_inputs - 1)
         self._n_layers_crossing = n_inputs - 2
         
-        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
+        # FULL
+        self._pc_layer_full = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_full[i]) for i in range(self._n_layers_ht)])
         # EVEN
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers_mmi)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers_mmi)])
         # ODD
-        if (crossing_i_losses_mtx_odd is not None) and (crossing_crosstalks_mtx_odd is not None):
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
-                n_inputs=n_inputs,
-                crossing_i_losses=crossing_i_losses_mtx_odd[i],
-                crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
-                for i in range(self._n_layers_crossing)])
-        else:
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
-        
-        self._ht_layer_side = nn.ModuleList([HeaterLayerMatrix_Side(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
+            n_inputs=n_inputs,
+            crossing_i_losses=crossing_i_losses_mtx_odd[i],
+            crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
+            for i in range(self._n_layers_crossing)])
+        # SIDE
+        self._pc_layer_side = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_side[i]) for i in range(self._n_layers_crossing)])
         # IN OUT
-        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_in = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[1])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
-        arct_matrix = self._ht_layer_in(arct_matrix)
+        arct_matrix = self._pc_layer_in(arct_matrix)
         for i in range(self._n_layers):
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_full[i](arct_matrix)
+            arct_matrix = self._pc_layer_full[i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-                arct_matrix = self._ht_layer_side[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+                arct_matrix = self._pc_layer_side[i](arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -602,6 +621,8 @@ class NEUROPULSBellCrossingSide_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
@@ -614,41 +635,41 @@ class NEUROPULSBellCrossingSide_Arct(nn.Module):
         self._n_layers_mmi = 2 * (n_inputs - 1)
         self._n_layers_crossing = n_inputs - 2
         
-        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
+        # FULL
+        self._pc_layer_full = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_full[i]) for i in range(self._n_layers_ht)])
         # EVEN
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers_mmi)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers_mmi)])
         # ODD
-        if (crossing_i_losses_mtx_odd is not None) and (crossing_crosstalks_mtx_odd is not None):
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(
-                n_inputs=n_inputs,
-                crossing_i_losses=crossing_i_losses_mtx_odd[i],
-                crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
-                for i in range(self._n_layers_crossing)])
-        else:
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
-        
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(
+            n_inputs=n_inputs,
+            crossing_i_losses=crossing_i_losses_mtx_odd[i],
+            crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
+            for i in range(self._n_layers_crossing)])
         # IN OUT
-        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_in = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[1])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
-        arct_matrix = self._ht_layer_in(arct_matrix)
+        arct_matrix = self._pc_layer_in(arct_matrix)
         for i in range(self._n_layers):
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_full[i](arct_matrix)
+            arct_matrix = self._pc_layer_full[i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -678,6 +699,8 @@ class NEUROPULSHalf_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_even: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
@@ -691,39 +714,36 @@ class NEUROPULSHalf_Arct(nn.Module):
         self._n_layers_crossing = n_inputs//2 - 1
         
         # EVEN
-        self._ht_layer_even = nn.ModuleList([HeaterLayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers_mmi)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
+        self._pc_layer_even = nn.ModuleList([PCLayerMatrix_Even(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_even[i]) for i in range(self._n_layers_ht)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers_mmi)])
         # ODD
-        if (crossing_i_losses_mtx_odd is not None) and (crossing_crosstalks_mtx_odd is not None):
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
-                n_inputs=n_inputs,
-                crossing_i_losses=crossing_i_losses_mtx_odd[i],
-                crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
-                for i in range(self._n_layers_crossing)])
-        else:
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
-        
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
+            n_inputs=n_inputs,
+            crossing_i_losses=crossing_i_losses_mtx_odd[i],
+            crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
+            for i in range(self._n_layers_crossing)])
         # OUT
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
         for i in range(self._n_layers):
-            arct_matrix = self._ht_layer_even[2*i](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_even[2*i+1](arct_matrix)
+            arct_matrix = self._pc_layer_even[2*i+1](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -753,6 +773,9 @@ class NEUROPULSBellHalf_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_side: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
@@ -765,43 +788,46 @@ class NEUROPULSBellHalf_Arct(nn.Module):
         self._n_layers_mmi = n_inputs
         self._n_layers_crossing = n_inputs//2 - 1
         
-        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
+        # FULL
+        self._pc_layer_full = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_full[i]) for i in range(self._n_layers_ht)])
         # EVEN
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers_mmi)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers_mmi)])
         # ODD
-        if (crossing_i_losses_mtx_odd is not None) and (crossing_crosstalks_mtx_odd is not None):
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
-                n_inputs=n_inputs,
-                crossing_i_losses=crossing_i_losses_mtx_odd[i],
-                crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
-                for i in range(self._n_layers_crossing)])
-        else:
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
-        
-        self._ht_layer_side = nn.ModuleList([HeaterLayerMatrix_Side(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
+            n_inputs=n_inputs,
+            crossing_i_losses=crossing_i_losses_mtx_odd[i],
+            crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
+            for i in range(self._n_layers_crossing)])
+        # SIDE
+        self._pc_layer_side = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_side[i]) for i in range(self._n_layers_crossing)])
         # IN OUT
-        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_in = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[1])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
-        arct_matrix = self._ht_layer_in(arct_matrix)
+        arct_matrix = self._pc_layer_in(arct_matrix)
         for i in range(self._n_layers):
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_full[i](arct_matrix)
+            arct_matrix = self._pc_layer_full[i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-                arct_matrix = self._ht_layer_side[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+                arct_matrix = self._pc_layer_side[i](arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 
@@ -831,6 +857,8 @@ class NEUROPULSBellHalfCrossingSide_Arct(nn.Module):
     """
     def __init__(self,
                  n_inputs: int,
+                 pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
@@ -843,41 +871,41 @@ class NEUROPULSBellHalfCrossingSide_Arct(nn.Module):
         self._n_layers_mmi = n_inputs
         self._n_layers_crossing = n_inputs//2 - 1
         
-        self._ht_layer_full = nn.ModuleList([HeaterLayerMatrix_Full(n_inputs=n_inputs) for _ in range(self._n_layers_ht)])
+        # FULL
+        self._pc_layer_full = nn.ModuleList([PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_full[i]) for i in range(self._n_layers_ht)])
         # EVEN
-        if (mmi_i_losses_mtx_even is not None) and (mmi_imbalances_mtx_even is not None):
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
-                n_inputs=n_inputs,
-                mmi_i_losses=mmi_i_losses_mtx_even[i],
-                mmi_imbalances=mmi_imbalances_mtx_even[i])
-                for i in range(self._n_layers_mmi)])
-        else:
-            self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(n_inputs=n_inputs) for _ in range(self._n_layers_mmi)])
+        self._mmi_layer_even = nn.ModuleList([MMILayerMatrix_Even(
+            n_inputs=n_inputs,
+            mmi_i_losses=mmi_i_losses_mtx_even[i],
+            mmi_imbalances=mmi_imbalances_mtx_even[i])
+            for i in range(self._n_layers_mmi)])
         # ODD
-        if (crossing_i_losses_mtx_odd is not None) and (crossing_crosstalks_mtx_odd is not None):
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(
-                n_inputs=n_inputs,
-                crossing_i_losses=crossing_i_losses_mtx_odd[i],
-                crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
-                for i in range(self._n_layers_crossing)])
-        else:
-            self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(n_inputs=n_inputs) for _ in range(self._n_layers_crossing)])
-        
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(
+            n_inputs=n_inputs,
+            crossing_i_losses=crossing_i_losses_mtx_odd[i],
+            crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
+            for i in range(self._n_layers_crossing)])
         # IN OUT
-        self._ht_layer_in = HeaterLayerMatrix_Full(n_inputs=n_inputs)
-        self._ht_layer_out = HeaterLayerMatrix_Full(n_inputs=n_inputs)
+        self._pc_layer_in = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[0])
+        self._pc_layer_out = PCLayerMatrix_Full(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_inout[1])
 
     def forward(self):
         id_ini = torch.eye(self._n_inputs, device=device)      # Identity matrix
         arct_matrix = torch.complex(id_ini, torch.zeros_like(id_ini, device=device))
-        arct_matrix = self._ht_layer_in(arct_matrix)
+        arct_matrix = self._pc_layer_in(arct_matrix)
         for i in range(self._n_layers):
             arct_matrix = self._mmi_layer_even[2*i](arct_matrix)
-            arct_matrix = self._ht_layer_full[i](arct_matrix)
+            arct_matrix = self._pc_layer_full[i](arct_matrix)
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-        arct_matrix = self._ht_layer_out(arct_matrix)
+        arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
 

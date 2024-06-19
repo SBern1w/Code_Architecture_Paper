@@ -11,6 +11,8 @@ import argparse
 import json
 import sys
 from mpi4py import MPI
+import time
+from datetime import timedelta
 import numpy as np
 from scipy.stats import unitary_group
 import tqdm
@@ -217,6 +219,8 @@ def parse_architectures(architectures):
 
 # =================================================== Main ========================================================
 if __name__ == "__main__":
+    start_time = time.time()
+
     parser = argparse.ArgumentParser(description='Process the hyperparameters.')
     parser.add_argument('--n_inputs', required=True, help='n_inputs')
     parser.add_argument('--arct', required=True, help='arct')
@@ -229,11 +233,11 @@ if __name__ == "__main__":
     # =============================================================================================================
     # HIGH PARAMETERS =============================================================================================
     # =============================================================================================================
-    seed = 37
+    seed = 100
 
     n_inputs = int(args.n_inputs)
-    n_matrices = 1000
-    n_repetitions = 5
+    n_matrices = 200
+    n_repetitions = 1
 
     lr = 0.001
     if n_inputs == 4:
@@ -258,7 +262,7 @@ if __name__ == "__main__":
     n_bachup = 500
 
     folder_path = args.folder_path
-    name_folder_out = 'n'+str(n_inputs)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_crosstalk'+str(cross_talk)+'_HPC_simulation/'
+    name_folder_out = 'seed'+str(seed)+'_n'+str(n_inputs)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_crosstalk'+str(cross_talk)+'_HPC_simulation/'
     # =============================================================================================================
     # =============================================================================================================
     # =============================================================================================================
@@ -316,7 +320,12 @@ if __name__ == "__main__":
         np.save(folder_path+name_folder_out+'save'+str(i//n_bachup+1)+'_CPU'+str(rank), targets_predictions_np)
         del targets_predictions_np
     
+    end_time = time.time()
+    work_duration = end_time - start_time
+    max_work_duration = comm.reduce(work_duration, op=MPI.MAX, root=0)
     if rank == 0:
+        max_duration_human_readable = str(timedelta(seconds=max_work_duration))
+        print(f"The maximum work duration is {max_duration_human_readable} (HH:MM:SS).")
         print("!!!Congratulation it has FINISH correctly!!!")
 
 

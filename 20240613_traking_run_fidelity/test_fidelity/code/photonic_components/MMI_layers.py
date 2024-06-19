@@ -31,16 +31,17 @@ class MMILayerMatrix_Even(nn.Module):
         if n_inputs%2 == 1: raise Exception('n_inputs is odd!!! NONONO, put it even!!!')
         _n_mmi = n_inputs//2
         if mmi_i_losses is None or mmi_imbalances is None:
-            atten = torch.ones(_n_mmi, device=device)
-            tau = 0.5 * atten
+            i_loss = torch.ones(_n_mmi, device=device)
+            tau = 0.5 * i_loss
             kappa = tau
         else:
-            atten = (1 - mmi_i_losses)
-            tau = 0.5 + mmi_imbalances
-            kappa = 0.5 - mmi_imbalances
+            i_loss = mmi_i_losses
+            alpha = 1/2*(mmi_imbalances-1)/(mmi_imbalances+1)
+            tau = 0.5 + alpha
+            kappa = 0.5 - alpha
 
-        tau_tf = torch.sqrt(atten) * torch.sqrt(tau)
-        kappa_tf = torch.sqrt(atten) * 1.j * torch.sqrt(kappa)
+        tau_tf = torch.sqrt(i_loss) * torch.sqrt(tau)
+        kappa_tf = torch.sqrt(i_loss) * 1.j * torch.sqrt(kappa)
         
         mmi_elements = torch.stack([
             torch.stack([tau_tf, kappa_tf], dim=-1),
@@ -78,16 +79,17 @@ class MMILayerMatrix_Odd(nn.Module):
         if n_inputs%2 == 1: raise Exception('n_inputs is odd!!! NONONO, put it even!!!')
         _n_mmi = n_inputs//2 - 1
         if mmi_i_losses is None or mmi_imbalances is None:
-            atten = torch.ones(_n_mmi, device=device)
-            tau = 0.5 * atten
+            i_loss = torch.ones(_n_mmi, device=device)
+            tau = 0.5 * i_loss
             kappa = tau
         else:
-            atten = (1 - mmi_i_losses)
-            tau = 0.5 + mmi_imbalances
-            kappa = 0.5 - mmi_imbalances
+            i_loss = mmi_i_losses
+            alpha = 1/2*(mmi_imbalances-1)/(mmi_imbalances+1)
+            tau = 0.5 + alpha
+            kappa = 0.5 - alpha
         
-        tau_tf = torch.sqrt(atten) * torch.sqrt(tau)
-        kappa_tf = torch.sqrt(atten) * 1.j * torch.sqrt(kappa)
+        tau_tf = torch.sqrt(i_loss) * torch.sqrt(tau)
+        kappa_tf = torch.sqrt(i_loss) * 1.j * torch.sqrt(kappa)
         
         mmi_elements = torch.stack([
             torch.stack([tau_tf, kappa_tf], dim=-1),

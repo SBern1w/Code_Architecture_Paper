@@ -1,0 +1,28 @@
+{
+    "runs": [
+        {
+            "n_inputs": 4,
+            "arct": "Fldzhyan_Arct",
+            "i_loss": 0.0,
+            "imbalance": 0.0,
+            "cross_talk": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "Fldzhyan_Arct",
+            "i_loss": 0.0,
+            "imbalance": 0.2,
+            "cross_talk": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "Fldzhyan_Arct",
+            "i_loss": 0.0,
+            "imbalance": -0.2,
+            "cross_talk": 0.0,
+            "folder_path": "outdata/"
+        }
+    ]
+  }
