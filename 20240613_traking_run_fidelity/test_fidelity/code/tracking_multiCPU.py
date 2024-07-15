@@ -57,7 +57,7 @@ class FidelityUnitary(nn.Module):
 
 # Model -----------------------------------------------------------------------------------------------------------
 def select_model(name_model):
-    pc_i_losses_mtx_even = torch.full((n_inputs, n_inputs), pc_iloss)
+    pc_i_losses_mtx_even = torch.full((2*(n_inputs-1), n_inputs), pc_iloss)
     pc_i_losses_mtx_odd = torch.full((n_inputs, n_inputs), pc_iloss)
     pc_i_losses_mtx_inout = torch.full((2, n_inputs), pc_iloss)
     pc_i_losses_mtx_full = torch.full((n_inputs, n_inputs), pc_iloss)
@@ -269,7 +269,7 @@ if __name__ == "__main__":
     seed = 37
 
     n_inputs = int(args.n_inputs)
-    n_matrices = 1000
+    n_matrices = 1
     n_repetitions = 5
 
     lr = 0.001

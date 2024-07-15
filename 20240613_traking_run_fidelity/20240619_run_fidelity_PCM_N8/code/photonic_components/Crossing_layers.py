@@ -38,7 +38,7 @@ class CrossingLayerMatrix_Odd(nn.Module):
             edge_dw_crossing = edge_up_crossing
         else:
             i_loss = crossing_i_losses
-            alpha = crossing_crosstalks/(1-crossing_crosstalks)
+            alpha = crossing_crosstalks/(1+crossing_crosstalks)
             tau = alpha
             kappa = 1 - alpha
             edge_up_crossing = torch.Tensor([1.], device=device)
@@ -90,11 +90,11 @@ class CrossingLayerMatrix_Odd_CossingSide(nn.Module):
             edge_dw_crossing = edge_up_crossing
         else:
             i_loss = crossing_i_losses[1:-1]
-            alpha = crossing_crosstalks[1:-1]/(1-crossing_crosstalks[1:-1])
+            alpha = crossing_crosstalks[1:-1]/(1+crossing_crosstalks[1:-1])
             tau = alpha
             kappa = 1 - alpha
-            edge_up_crossing = torch.sqrt(crossing_i_losses[0]) * torch.sqrt(1 - crossing_crosstalks[0]/(1-crossing_crosstalks[0]))
-            edge_dw_crossing = torch.sqrt(crossing_i_losses[-1]) * torch.sqrt(1 - crossing_crosstalks[-1]/(1-crossing_crosstalks[-1]))
+            edge_up_crossing = torch.sqrt(crossing_i_losses[0]) * torch.sqrt(1 - crossing_crosstalks[0]/(1+crossing_crosstalks[0]))
+            edge_dw_crossing = torch.sqrt(crossing_i_losses[-1]) * torch.sqrt(1 - crossing_crosstalks[-1]/(1+crossing_crosstalks[-1]))
 
         tau_tf = torch.sqrt(i_loss) * torch.sqrt(tau).to(torch.complex64)
         kappa_tf = torch.sqrt(i_loss) * torch.sqrt(kappa).to(torch.complex64)

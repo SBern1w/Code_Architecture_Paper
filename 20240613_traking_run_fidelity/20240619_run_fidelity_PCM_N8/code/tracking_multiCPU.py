@@ -57,7 +57,12 @@ class FidelityUnitary(nn.Module):
 
 # Model -----------------------------------------------------------------------------------------------------------
 def select_model(name_model):
-    pc_i_losses_mtx_even = torch.full((n_inputs, n_inputs), pc_iloss)
+    pc_iloss = 10**(pc_iloss_dB/10)
+    i_loss = 10**(i_loss_dB/10)
+    imbalance = 10**(imbalance_dB/10) 
+    cross_talk = 10**(cross_talk_dB/10)
+
+    pc_i_losses_mtx_even = torch.full((2*(n_inputs-1), n_inputs), pc_iloss)
     pc_i_losses_mtx_odd = torch.full((n_inputs, n_inputs), pc_iloss)
     pc_i_losses_mtx_inout = torch.full((2, n_inputs), pc_iloss)
     pc_i_losses_mtx_full = torch.full((n_inputs, n_inputs), pc_iloss)
@@ -256,10 +261,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process the hyperparameters.')
     parser.add_argument('--n_inputs', required=True, help='n_inputs')
     parser.add_argument('--arct', required=True, help='arct')
-    parser.add_argument('--pc_iloss', required=True, help='pc_iloss')
-    parser.add_argument('--i_loss', required=True, help='i_loss')
-    parser.add_argument('--imbalance', required=True, help='imbalance')
-    parser.add_argument('--cross_talk', required=True, help='cross_talk')
+    parser.add_argument('--pc_iloss', required=True, help='pc_iloss in dB')
+    parser.add_argument('--i_loss', required=True, help='i_loss in dB')
+    parser.add_argument('--imbalance', required=True, help='imbalance in dB')
+    parser.add_argument('--cross_talk', required=True, help='cross_talk in dB')
     parser.add_argument('--folder_path', required=True, help='folder_path')
     args = parser.parse_args()
 
@@ -287,16 +292,16 @@ if __name__ == "__main__":
     name_models = parse_architectures(args.arct)
     
     # CONSTANT LOSS
-    pc_iloss = 10**(float(args.pc_iloss)/10)     # =P_out/P_in. 0dB pefect component, -100dB very lossy
-    i_loss = 10**(float(args.i_loss)/10)         # =P_out/P_in. 0dB pefect component, -100dB very lossy
-    imbalance = 10**(float(args.imbalance)/10)   # =P_outmax/P_outmin. 0dB 50/50 MMI, 100dB all power to outUP, -100dB all power to outDOWN
-    cross_talk = 10**(float(args.cross_talk)/10) # =P_leakout/P_otherout. -infdB Crossing perfect, -1dB very bad device a lot power leak
+    pc_iloss_dB = float(args.pc_iloss)     # =P_out/P_in. 0dB pefect component, -100dB very lossy
+    i_loss_dB = float(args.i_loss)         # =P_out/P_in. 0dB pefect component, -100dB very lossy
+    imbalance_dB = float(args.imbalance)   # =P_outmax/P_outmin. 0dB 50/50 MMI, 100dB all power to outUP, -100dB all power to outDOWN
+    cross_talk_dB = float(args.cross_talk) # =P_leakout/P_otherout. -infdB Crossing perfect, -1dB very bad device a lot power leak
 
     # If RAM too full decrease and fail with kill problem -> Decrease this number
     n_bachup = 500
 
     folder_path = args.folder_path
-    name_folder_out = 'n'+str(n_inputs)+"_pciloss"+str(pc_iloss)+'_iloss'+str(i_loss)+'_imb'+str(imbalance)+'_crosstalk'+str(cross_talk)+'_HPC_simulation/'
+    name_folder_out = 'n'+str(n_inputs)+"_pciloss"+str(pc_iloss_dB)+'_iloss'+str(i_loss_dB)+'_imb'+str(imbalance_dB)+'_crosstalk'+str(cross_talk_dB)+'_HPC_simulation/'
     # =============================================================================================================
     # =============================================================================================================
     # =============================================================================================================
