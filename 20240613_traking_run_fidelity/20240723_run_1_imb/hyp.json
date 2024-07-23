@@ -1,0 +1,463 @@
+{
+    "runs": [
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": -1.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": -1.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": -1.0,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": -0.75,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": -0.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": -0.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": 0.0,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": 0.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": 0.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": 0.75,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": 1.0,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": 1.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": 1.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -1.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -1.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -1.0,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.75,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.0,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.75,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 1.0,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 1.25,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 1.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -1.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -1.25,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -1.0,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.75,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.25,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.0,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.25,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.75,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 1.0,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 1.25,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 1.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": 0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": -0.5,
+            "imbalance": -0.5,
+            "cross_talk": -30.0,
+            "folder_path": "outdata/"
+        }
+    ]
+}

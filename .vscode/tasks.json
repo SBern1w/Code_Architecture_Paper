@@ -4,7 +4,7 @@
         {
             "label": "Run Shell Script",
             "type": "shell",
-            "command": "./20240613_traking_run_fidelity/test_fidelity_gaussian/run_python_myPC.sh",
+            "command": "./20240613_traking_run_fidelity/test_run_1_imb/run_python_myPC.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
