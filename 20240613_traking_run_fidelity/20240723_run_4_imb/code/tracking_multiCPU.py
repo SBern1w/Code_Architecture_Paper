@@ -56,41 +56,25 @@ class FidelityUnitary(nn.Module):
         return loss
 
 # Model -----------------------------------------------------------------------------------------------------------
-def create_truncated_gaussian_tensor(mu, sigma, shape, max_value=None):
-    tensor = torch.normal(mean=mu, std=sigma, size=shape)
-    if max_value is not None:
-        tensor = torch.clamp(tensor, max=max_value)
-    return tensor
-
 def select_model(name_model):
-    pc_i_losses_mtx_even = create_truncated_gaussian_tensor(pc_iloss_mu, pc_iloss_sigma, (2*(n_inputs-1), n_inputs), 0)
-    pc_i_losses_mtx_even = 10**(pc_i_losses_mtx_even/10)
-    pc_i_losses_mtx_odd = create_truncated_gaussian_tensor(pc_iloss_mu, pc_iloss_sigma, (n_inputs, n_inputs), 0)
-    pc_i_losses_mtx_odd = 10**(pc_i_losses_mtx_odd/10)
-    pc_i_losses_mtx_inout = create_truncated_gaussian_tensor(pc_iloss_mu, pc_iloss_sigma, (2, n_inputs), 0)
-    pc_i_losses_mtx_inout = 10**(pc_i_losses_mtx_inout/10)
-    pc_i_losses_mtx_full = create_truncated_gaussian_tensor(pc_iloss_mu, pc_iloss_sigma, (n_inputs, n_inputs), 0)
-    pc_i_losses_mtx_full = 10**(pc_i_losses_mtx_full/10)
-    pc_i_losses_mtx_side = create_truncated_gaussian_tensor(pc_iloss_mu, pc_iloss_sigma, (n_inputs-2, n_inputs), 0)
-    pc_i_losses_mtx_side = 10**(pc_i_losses_mtx_side/10)
+    pc_iloss = 10**(pc_iloss_dB/10)
+    i_loss = 10**(i_loss_dB/10)
+    imbalance = 10**(imbalance_dB/10) 
+    cross_talk = 10**(cross_talk_dB/10)
 
-    mmi_i_losses_mtx_even = create_truncated_gaussian_tensor(i_loss_MMI_mu, i_loss_MMI_sigma, (2*(n_inputs-1), n_inputs//2), 0)
-    mmi_i_losses_mtx_even = 10**(mmi_i_losses_mtx_even/10)
-    mmi_i_losses_mtx_odd = create_truncated_gaussian_tensor(i_loss_MMI_mu, i_loss_MMI_sigma, (n_inputs, n_inputs//2-1), 0)
-    mmi_i_losses_mtx_odd = 10**(mmi_i_losses_mtx_odd/10)
-    mmi_imbalances_mtx_even = create_truncated_gaussian_tensor(imbalance_mu, imbalance_sigma, (2*(n_inputs-1), n_inputs//2))
-    mmi_imbalances_mtx_even = 10**(mmi_imbalances_mtx_even/10)
-    mmi_imbalances_mtx_odd = create_truncated_gaussian_tensor(imbalance_mu, imbalance_sigma, (n_inputs, n_inputs//2-1))
-    mmi_imbalances_mtx_odd = 10**(mmi_imbalances_mtx_odd/10)
-
-    crossing_i_losses_mtx_odd = create_truncated_gaussian_tensor(i_loss_Crossing_mu, i_loss_Crossing_sigma, (n_inputs-2, n_inputs//2-1), 0)
-    crossing_i_losses_mtx_odd = 10**(crossing_i_losses_mtx_odd/10)
-    crossing_i_losses_mtx_odd_side = create_truncated_gaussian_tensor(i_loss_Crossing_mu, i_loss_Crossing_sigma, (n_inputs-2, n_inputs//2+1), 0)
-    crossing_i_losses_mtx_odd_side = 10**(crossing_i_losses_mtx_odd_side/10)
-    crossing_crosstalks_mtx_odd = create_truncated_gaussian_tensor(cross_talk_mu, cross_talk_sigma, (n_inputs-2, n_inputs//2-1))
-    crossing_crosstalks_mtx_odd = 10**(crossing_crosstalks_mtx_odd/10)
-    crossing_crosstalks_mtx_odd_side = create_truncated_gaussian_tensor(cross_talk_mu, cross_talk_sigma, (n_inputs-2, n_inputs//2+1))
-    crossing_crosstalks_mtx_odd_side = 10**(crossing_crosstalks_mtx_odd_side/10)
+    pc_i_losses_mtx_even = torch.full((2*(n_inputs-1), n_inputs), pc_iloss)
+    pc_i_losses_mtx_odd = torch.full((n_inputs, n_inputs), pc_iloss)
+    pc_i_losses_mtx_inout = torch.full((2, n_inputs), pc_iloss)
+    pc_i_losses_mtx_full = torch.full((n_inputs, n_inputs), pc_iloss)
+    pc_i_losses_mtx_side = torch.full((n_inputs-2, n_inputs), pc_iloss)
+    mmi_i_losses_mtx_even = torch.full((2*(n_inputs-1), n_inputs//2), i_loss)
+    mmi_i_losses_mtx_odd = torch.full((n_inputs, n_inputs//2-1), i_loss)
+    mmi_imbalances_mtx_even = torch.full((2*(n_inputs-1), n_inputs//2), imbalance)
+    mmi_imbalances_mtx_odd = torch.full((n_inputs, n_inputs//2-1), imbalance)
+    crossing_i_losses_mtx_odd = torch.full((n_inputs-2, n_inputs//2-1), i_loss)
+    crossing_crosstalks_mtx_odd = torch.full((n_inputs-2, n_inputs//2-1), cross_talk)
+    crossing_i_losses_mtx_odd_side = torch.full((n_inputs-2, n_inputs//2+1), i_loss)
+    crossing_crosstalks_mtx_odd_side = torch.full((n_inputs-2, n_inputs//2+1), cross_talk)
     if name_model == 'Clements_Arct':
         model = Clements_Arct(
             n_inputs=n_inputs,
@@ -297,9 +281,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process the hyperparameters.')
     parser.add_argument('--n_inputs', required=True, help='n_inputs')
     parser.add_argument('--arct', required=True, help='arct')
-    parser.add_argument('--pc_iloss_mu', required=True, help='pc_iloss_mu')
-    parser.add_argument('--pc_iloss_sigma', required=True, help='pc_iloss_sigma')
-    parser.add_argument('--imbalance_mu', required=True, help='imbalance_mu')
+    parser.add_argument('--pc_iloss', required=True, help='pc_iloss in dB')
+    parser.add_argument('--i_loss', required=True, help='i_loss in dB')
+    parser.add_argument('--imbalance', required=True, help='imbalance in dB')
+    parser.add_argument('--cross_talk', required=True, help='cross_talk in dB')
     parser.add_argument('--folder_path', required=True, help='folder_path')
     args = parser.parse_args()
 
@@ -330,25 +315,17 @@ if __name__ == "__main__":
 
     name_models = parse_architectures(args.arct)
     
-    # GAUSSIAN DISTRIBUTION
-    pc_iloss_mu = float(args.pc_iloss_mu)       # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
-    pc_iloss_sigma = float(args.pc_iloss_sigma) # Std deviation
-
-    i_loss_MMI_mu = -0.25        # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
-    i_loss_MMI_sigma = 0.1      # Std deviation
-    imbalance_mu = float(args.imbalance_mu)            # Average =P_outmax/P_outmin. 0dB 50/50 MMI, 100dB all power to outUP, -100dB all power to outDOWN
-    imbalance_sigma = 0.15      # Std deviation
-
-    i_loss_Crossing_mu = -0.25       # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
-    i_loss_Crossing_sigma = 0.05     # Std deviation
-    cross_talk_mu = -35             # Average =P_leakout/P_otherout. -infdB Crossing perfect, -1dB very bad device a lot power leak
-    cross_talk_sigma = 1            # Std deviation
+    # CONSTANT LOSS
+    pc_iloss_dB = float(args.pc_iloss)     # =P_out/P_in. 0dB pefect component, -100dB very lossy
+    i_loss_dB = float(args.i_loss)         # =P_out/P_in. 0dB pefect component, -100dB very lossy
+    imbalance_dB = float(args.imbalance)   # =P_outmax/P_outmin. 0dB 50/50 MMI, 100dB all power to outUP, -100dB all power to outDOWN
+    cross_talk_dB = float(args.cross_talk) # =P_leakout/P_otherout. -infdB Crossing perfect, -1dB very bad device a lot power leak
 
     # If RAM too full decrease and fail with kill problem -> Decrease this number
     n_bachup = 500
 
     folder_path = args.folder_path
-    name_folder_out = 'n'+str(n_inputs)+'_pcilossmu'+str(pc_iloss_mu)+'_pcilosssigma'+str(pc_iloss_sigma)+'_imbalancemu'+str(imbalance_mu)+'_HPC_simulation/'
+    name_folder_out = 'n'+str(n_inputs)+"_pciloss"+str(pc_iloss_dB)+'_iloss'+str(i_loss_dB)+'_imb'+str(imbalance_dB)+'_crosstalk'+str(cross_talk_dB)+'_HPC_simulation/'
     # =============================================================================================================
     # =============================================================================================================
     # =============================================================================================================

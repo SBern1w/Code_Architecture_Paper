@@ -679,7 +679,6 @@ class NEUROPULSBell2_Arct(nn.Module):
         return arct_matrix
 
 
-
 # NEUROPULS Bell Crossing Side Architecture -----------------------------------------------------------------------
 class NEUROPULSBellCrossingSide_Arct(nn.Module):
     r"""

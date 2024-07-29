@@ -2,7 +2,7 @@
     "runs": [
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -10,7 +10,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -18,7 +18,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -26,7 +26,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": -0.25,
@@ -34,7 +34,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": 0.0,
@@ -42,7 +42,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": 0.25,
@@ -50,7 +50,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": -0.25,
@@ -58,7 +58,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": 0.0,
@@ -66,7 +66,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": 0.25,
@@ -74,7 +74,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": -0.25,
@@ -82,7 +82,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": 0.0,
@@ -90,7 +90,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": 0.25,
@@ -98,7 +98,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": -0.25,
@@ -106,7 +106,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": 0.0,
@@ -114,7 +114,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": 0.25,
@@ -122,7 +122,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -130,7 +130,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -138,7 +138,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.5,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -146,7 +146,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -154,7 +154,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -162,7 +162,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -170,7 +170,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": -0.25,
@@ -178,7 +178,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": 0.0,
@@ -186,7 +186,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": 0.25,
@@ -194,7 +194,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": -0.25,
@@ -202,7 +202,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": 0.0,
@@ -210,7 +210,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": 0.25,
@@ -218,7 +218,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": -0.25,
@@ -226,7 +226,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": 0.0,
@@ -234,7 +234,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": 0.25,
@@ -242,7 +242,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": -0.25,
@@ -250,7 +250,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": 0.0,
@@ -258,7 +258,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": 0.25,
@@ -266,7 +266,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -274,7 +274,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -282,7 +282,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -290,7 +290,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -298,7 +298,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -306,7 +306,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -314,7 +314,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": -0.25,
@@ -322,7 +322,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": 0.0,
@@ -330,7 +330,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.1,
             "imbalance_mu": 0.25,
@@ -338,7 +338,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": -0.25,
@@ -346,7 +346,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": 0.0,
@@ -354,7 +354,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.2,
             "imbalance_mu": 0.25,
@@ -362,7 +362,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": -0.25,
@@ -370,7 +370,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": 0.0,
@@ -378,7 +378,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.3,
             "imbalance_mu": 0.25,
@@ -386,7 +386,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": -0.25,
@@ -394,7 +394,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": 0.0,
@@ -402,7 +402,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.4,
             "imbalance_mu": 0.25,
@@ -410,7 +410,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -418,7 +418,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -426,7 +426,7 @@
         },
         {
             "n_inputs": 8,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -434,7 +434,7 @@
         },
         {
             "n_inputs": 4,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -442,7 +442,7 @@
         },
         {
             "n_inputs": 4,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -450,7 +450,7 @@
         },
         {
             "n_inputs": 4,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -458,7 +458,7 @@
         },
         {
             "n_inputs": 6,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -466,7 +466,7 @@
         },
         {
             "n_inputs": 6,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -474,7 +474,7 @@
         },
         {
             "n_inputs": 6,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -482,7 +482,7 @@
         },
         {
             "n_inputs": 10,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -490,7 +490,7 @@
         },
         {
             "n_inputs": 10,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -498,7 +498,7 @@
         },
         {
             "n_inputs": 10,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -506,7 +506,7 @@
         },
         {
             "n_inputs": 12,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -514,7 +514,7 @@
         },
         {
             "n_inputs": 12,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -522,7 +522,7 @@
         },
         {
             "n_inputs": 12,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -530,7 +530,7 @@
         },
         {
             "n_inputs": 14,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -538,7 +538,7 @@
         },
         {
             "n_inputs": 14,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -546,7 +546,7 @@
         },
         {
             "n_inputs": 14,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -554,7 +554,7 @@
         },
         {
             "n_inputs": 16,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": -0.25,
@@ -562,7 +562,7 @@
         },
         {
             "n_inputs": 16,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.0,
@@ -570,7 +570,7 @@
         },
         {
             "n_inputs": 16,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": 0.0,
             "pc_iloss_sigma": 0.0,
             "imbalance_mu": 0.25,
@@ -578,7 +578,7 @@
         },
         {
             "n_inputs": 4,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -586,7 +586,7 @@
         },
         {
             "n_inputs": 4,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -594,7 +594,7 @@
         },
         {
             "n_inputs": 4,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -602,7 +602,7 @@
         },
         {
             "n_inputs": 6,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -610,7 +610,7 @@
         },
         {
             "n_inputs": 6,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -618,7 +618,7 @@
         },
         {
             "n_inputs": 6,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -626,7 +626,7 @@
         },
         {
             "n_inputs": 10,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -634,7 +634,7 @@
         },
         {
             "n_inputs": 10,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -642,7 +642,7 @@
         },
         {
             "n_inputs": 10,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -650,7 +650,7 @@
         },
         {
             "n_inputs": 12,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -658,7 +658,7 @@
         },
         {
             "n_inputs": 12,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -666,7 +666,7 @@
         },
         {
             "n_inputs": 12,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -674,7 +674,7 @@
         },
         {
             "n_inputs": 14,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -682,7 +682,7 @@
         },
         {
             "n_inputs": 14,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -690,7 +690,7 @@
         },
         {
             "n_inputs": 14,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
@@ -698,7 +698,7 @@
         },
         {
             "n_inputs": 16,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": -0.25,
@@ -706,7 +706,7 @@
         },
         {
             "n_inputs": 16,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.0,
@@ -714,7 +714,7 @@
         },
         {
             "n_inputs": 16,
-            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,FldzhyanBellHalf_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct,NEUROPULSHalf_Arct,NEUROPULSBellHalf_Arct,NEUROPULSBellHalfCrossingSide_Arct",
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
             "pc_iloss_mu": -1.0,
             "pc_iloss_sigma": 0.5,
             "imbalance_mu": 0.25,
