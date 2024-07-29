@@ -628,7 +628,7 @@ class NEUROPULSBell2_Arct(nn.Module):
                  mmi_imbalances_mtx_even: torch.Tensor = None,
                  crossing_i_losses_mtx_odd: torch.Tensor = None,
                  crossing_crosstalks_mtx_odd: torch.Tensor = None):
-        super(NEUROPULSBell_Arct, self).__init__()
+        super(NEUROPULSBell2_Arct, self).__init__()
         if n_inputs%2 == 1: raise Exception('n_inputs is odd!!! NONONO, put it even!!!')
         self._n_inputs = n_inputs
         self._n_layers = n_inputs - 1
