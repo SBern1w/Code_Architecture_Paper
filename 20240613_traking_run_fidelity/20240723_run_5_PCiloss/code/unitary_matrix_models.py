@@ -600,13 +600,13 @@ class NEUROPULSBell_Arct(nn.Module):
 class NEUROPULSBell2_Arct(nn.Module):
     r"""
     NEUROPULS architecture:
-        0__[]__  __[]__  ______   __[]__  __[]__  ______   __[]__  __[]__  __[]__0
-               \/      \/      \-/      \/      \/      \-/      \/      \/
+        0__[]__  __[]__  _______________  __[]__  _______________  __[]__  __[]__0
+               \/      \/               \/      \/               \/      \/
         1__[]__/\__[]__/\______   ______/\__[]__/\______   ______/\__[]__/\__[]__1
                                \-/                      \-/
         2__[]__  __[]__  ______/-\______  __[]__  ______/-\______  __[]__  __[]__2
                \/      \/               \/      \/               \/      \/
-        3__[]__/\__[]__/\______/-\__[]__/\__[]__/\______/-\__[]__/\__[]__/\__[]__3
+        3__[]__/\__[]__/\_______________/\__[]__/\_______________/\__[]__/\__[]__3
 
         with:
             0__[]__1 = Phase Shifter
@@ -622,7 +622,6 @@ class NEUROPULSBell2_Arct(nn.Module):
     def __init__(self,
                  n_inputs: int,
                  pc_i_losses_mtx_full: torch.Tensor = None,
-                 pc_i_losses_mtx_side: torch.Tensor = None,
                  pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -647,15 +646,11 @@ class NEUROPULSBell2_Arct(nn.Module):
             mmi_imbalances=mmi_imbalances_mtx_even[i])
             for i in range(self._n_layers_mmi)])
         # ODD
-        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd_CossingSide(
+        self._crossing_layer_odd = nn.ModuleList([CrossingLayerMatrix_Odd(
             n_inputs=n_inputs,
             crossing_i_losses=crossing_i_losses_mtx_odd[i],
             crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
             for i in range(self._n_layers_crossing)])
-        # SIDE
-        self._pc_layer_side = nn.ModuleList([PCLayerMatrix_Side(
-            n_inputs=n_inputs,
-            pc_i_losses=pc_i_losses_mtx_side[i]) for i in range(self._n_layers_crossing)])
         # IN OUT
         self._pc_layer_in = PCLayerMatrix_Full(
             n_inputs=n_inputs,
@@ -674,7 +669,6 @@ class NEUROPULSBell2_Arct(nn.Module):
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-                arct_matrix = self._pc_layer_side[i](arct_matrix)
         arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 
@@ -684,13 +678,13 @@ class NEUROPULSBell2_Arct(nn.Module):
 class NEUROPULSBellCrossingSide_Arct(nn.Module):
     r"""
     NEUROPULS architecture:
-        0__[]__  __[]__  ______   ______  __[]__  ______   ______  __[]__  __[]__0
+        0__[]__  __[]__  ______   __[]__  __[]__  ______   __[]__  __[]__  __[]__0
                \/      \/      \-/      \/      \/      \-/      \/      \/
         1__[]__/\__[]__/\______   ______/\__[]__/\______   ______/\__[]__/\__[]__1
                                \-/                      \-/
         2__[]__  __[]__  ______/-\______  __[]__  ______/-\______  __[]__  __[]__2
                \/      \/               \/      \/               \/      \/
-        3__[]__/\__[]__/\______/-\______/\__[]__/\______/-\______/\__[]__/\__[]__3
+        3__[]__/\__[]__/\______/-\__[]__/\__[]__/\______/-\__[]__/\__[]__/\__[]__3
 
         with:
             0__[]__1 = Phase Shifter
@@ -706,6 +700,7 @@ class NEUROPULSBellCrossingSide_Arct(nn.Module):
     def __init__(self,
                  n_inputs: int,
                  pc_i_losses_mtx_full: torch.Tensor = None,
+                 pc_i_losses_mtx_side: torch.Tensor = None,
                  pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -735,6 +730,10 @@ class NEUROPULSBellCrossingSide_Arct(nn.Module):
             crossing_i_losses=crossing_i_losses_mtx_odd[i],
             crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
             for i in range(self._n_layers_crossing)])
+        # SIDE
+        self._pc_layer_side = nn.ModuleList([PCLayerMatrix_Side(
+            n_inputs=n_inputs,
+            pc_i_losses=pc_i_losses_mtx_side[i]) for i in range(self._n_layers_crossing)])
         # IN OUT
         self._pc_layer_in = PCLayerMatrix_Full(
             n_inputs=n_inputs,
@@ -753,21 +752,23 @@ class NEUROPULSBellCrossingSide_Arct(nn.Module):
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
+                arct_matrix = self._pc_layer_side[i](arct_matrix)
         arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
+
 
 
 # NEUROPULS Bell Crossing Side 2 Architecture ---------------------------------------------------------------------
 class NEUROPULSBellCrossingSide2_Arct(nn.Module):
     r"""
     NEUROPULS architecture:
-        0__[]__  __[]__  ______   __[]__  __[]__  ______   __[]__  __[]__  __[]__0
+        0__[]__  __[]__  ______   ______  __[]__  ______   ______  __[]__  __[]__0
                \/      \/      \-/      \/      \/      \-/      \/      \/
         1__[]__/\__[]__/\______   ______/\__[]__/\______   ______/\__[]__/\__[]__1
                                \-/                      \-/
         2__[]__  __[]__  ______/-\______  __[]__  ______/-\______  __[]__  __[]__2
                \/      \/               \/      \/               \/      \/
-        3__[]__/\__[]__/\______/-\__[]__/\__[]__/\______/-\__[]__/\__[]__/\__[]__3
+        3__[]__/\__[]__/\______/-\______/\__[]__/\______/-\______/\__[]__/\__[]__3
 
         with:
             0__[]__1 = Phase Shifter
@@ -783,7 +784,6 @@ class NEUROPULSBellCrossingSide2_Arct(nn.Module):
     def __init__(self,
                  n_inputs: int,
                  pc_i_losses_mtx_full: torch.Tensor = None,
-                 pc_i_losses_mtx_side: torch.Tensor = None,
                  pc_i_losses_mtx_inout: torch.Tensor = None,
                  mmi_i_losses_mtx_even: torch.Tensor = None,
                  mmi_imbalances_mtx_even: torch.Tensor = None,
@@ -813,10 +813,6 @@ class NEUROPULSBellCrossingSide2_Arct(nn.Module):
             crossing_i_losses=crossing_i_losses_mtx_odd[i],
             crossing_crosstalks=crossing_crosstalks_mtx_odd[i])
             for i in range(self._n_layers_crossing)])
-        # SIDE
-        self._pc_layer_side = nn.ModuleList([PCLayerMatrix_Side(
-            n_inputs=n_inputs,
-            pc_i_losses=pc_i_losses_mtx_side[i]) for i in range(self._n_layers_crossing)])
         # IN OUT
         self._pc_layer_in = PCLayerMatrix_Full(
             n_inputs=n_inputs,
@@ -835,7 +831,6 @@ class NEUROPULSBellCrossingSide2_Arct(nn.Module):
             arct_matrix = self._mmi_layer_even[2*i+1](arct_matrix)
             if i < self._n_layers - 1:
                 arct_matrix = self._crossing_layer_odd[i](arct_matrix)
-                arct_matrix = self._pc_layer_side[i](arct_matrix)
         arct_matrix = self._pc_layer_out(arct_matrix)
         return arct_matrix
 

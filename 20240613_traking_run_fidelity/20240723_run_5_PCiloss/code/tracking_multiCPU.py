@@ -154,16 +154,16 @@ def select_model(name_model):
         model = NEUROPULSBell2_Arct(
             n_inputs=n_inputs,
             pc_i_losses_mtx_full=pc_i_losses_mtx_full,
-            pc_i_losses_mtx_side=pc_i_losses_mtx_side,
             pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
-            crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd_side,
+            crossing_i_losses_mtx_odd=crossing_i_losses_mtx_odd,
             crossing_crosstalks_mtx_odd=crossing_crosstalks_mtx_odd)
     elif name_model == 'NEUROPULSBellCrossingSide_Arct':
         model = NEUROPULSBellCrossingSide_Arct(
             n_inputs=n_inputs,
             pc_i_losses_mtx_full=pc_i_losses_mtx_full,
+            pc_i_losses_mtx_side=pc_i_losses_mtx_side,
             pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,
@@ -173,7 +173,6 @@ def select_model(name_model):
         model = NEUROPULSBellCrossingSide2_Arct(
             n_inputs=n_inputs,
             pc_i_losses_mtx_full=pc_i_losses_mtx_full,
-            pc_i_losses_mtx_side=pc_i_losses_mtx_side,
             pc_i_losses_mtx_inout=pc_i_losses_mtx_full,
             mmi_i_losses_mtx_even=mmi_i_losses_mtx_even,
             mmi_imbalances_mtx_even=mmi_imbalances_mtx_even,

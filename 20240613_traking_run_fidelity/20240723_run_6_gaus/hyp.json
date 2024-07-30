@@ -1,0 +1,724 @@
+{
+    "runs": [
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.5,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.1,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.2,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.3,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.4,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 8,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": 0.0,
+            "pc_iloss_sigma": 0.0,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 4,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 6,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 10,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 12,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 14,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": -0.25,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.0,
+            "folder_path": "outdata/"
+        },
+        {
+            "n_inputs": 16,
+            "arct": "NEUROPULSBell2_Arct",
+            "pc_iloss_mu": -1.0,
+            "pc_iloss_sigma": 0.5,
+            "imbalance_mu": 0.25,
+            "folder_path": "outdata/"
+        }
+    ]
+}
