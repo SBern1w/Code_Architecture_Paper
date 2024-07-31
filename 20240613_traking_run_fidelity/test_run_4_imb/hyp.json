@@ -1,0 +1,13 @@
+{
+    "runs": [
+        {
+            "n_inputs": 4,
+            "arct": "Clements_Arct,ClementsBell_Arct,Fldzhyan_Arct,FldzhyanBell_Arct,NEUROPULS_Arct,NEUROPULSCrossingSide_Arct,NEUROPULSBell_Arct,NEUROPULSBell2_Arct,NEUROPULSBellCrossingSide_Arct,NEUROPULSBellCrossingSide2_Arct",
+            "pc_iloss": 0.0,
+            "i_loss": 0.0,
+            "imbalance": -1.5,
+            "cross_talk": -1000.0,
+            "folder_path": "outdata/"
+        }
+    ]
+}
