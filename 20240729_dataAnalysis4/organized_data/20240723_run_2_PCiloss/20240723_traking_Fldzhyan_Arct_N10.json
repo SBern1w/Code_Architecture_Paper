@@ -1,0 +1,33 @@
+{
+    "name_file": "traking_Fldzhyan_Arct_N10",
+    "arct": "Fldzhyan_Arct",
+    "n_inputs": 10,
+    "n_epochs": 23000,
+    "date": "20240723",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 5,
+    "lr": 0.001,
+    "n_bachup": 500,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "PC_i_loss_const": -1.0,
+            "i_loss_const": -0.5,
+            "imbalance_const": -0.5,
+            "cross_talk_const": -30.0,
+            "average": 0.9437903785499254,
+            "std_dev": 0.0060216606538475645
+        },
+        {
+            "PC_i_loss_const": -1.0,
+            "i_loss_const": -0.5,
+            "imbalance_const": 0.5,
+            "cross_talk_const": -30.0,
+            "average": 0.9374805188236981,
+            "std_dev": 0.006871654209690476
+        }
+    ]
+}
