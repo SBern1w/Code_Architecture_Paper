@@ -1,0 +1,33 @@
+{
+    "name_file": "traking_Clements_Arct_N6",
+    "arct": "Clements_Arct",
+    "n_inputs": 6,
+    "n_epochs": 21000,
+    "date": "20240723",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 5,
+    "lr": 0.001,
+    "n_bachup": 500,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "PC_i_loss_const": -1.0,
+            "i_loss_const": -0.5,
+            "imbalance_const": -0.5,
+            "cross_talk_const": -30.0,
+            "average": 0.9484967494243994,
+            "std_dev": 0.009636412556689344
+        },
+        {
+            "PC_i_loss_const": -1.0,
+            "i_loss_const": -0.5,
+            "imbalance_const": 0.5,
+            "cross_talk_const": -30.0,
+            "average": 0.9455375463096436,
+            "std_dev": 0.009999897807838174
+        }
+    ]
+}
