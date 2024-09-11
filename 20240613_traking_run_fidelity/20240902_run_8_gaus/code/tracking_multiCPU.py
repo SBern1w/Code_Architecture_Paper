@@ -16,6 +16,7 @@ from datetime import timedelta
 import numpy as np
 from scipy.stats import unitary_group
 import tqdm
+from scipy.stats import truncnorm
 
 import torch
 import torch.nn as nn
@@ -56,11 +57,14 @@ class FidelityUnitary(nn.Module):
         return loss
 
 # Model -----------------------------------------------------------------------------------------------------------
-def create_truncated_gaussian_tensor(mu, sigma, shape, max_value=None):
-    tensor = torch.normal(mean=mu, std=sigma, size=shape)
-    if max_value is not None:
-        tensor = torch.clamp(tensor, max=max_value)
-    return tensor
+def create_truncated_gaussian_tensor(mean, std_dev, shape, upper_bound=None):
+    # Calculate the parameters for truncnorm: (a, b) are the normalized boundaries
+    a = (-np.inf - mean) / std_dev
+    b = (upper_bound - mean) / std_dev
+
+    # Generate truncated Gaussian values
+    tensor_gaus_truncate = truncnorm.rvs(a, b, loc=mean, scale=std_dev, size=shape)
+    return tensor_gaus_truncate
 
 def select_model(name_model):
     pc_i_losses_mtx_even = create_truncated_gaussian_tensor(pc_iloss_mu, pc_iloss_sigma, (2*(n_inputs-1), n_inputs), 0)
@@ -333,12 +337,12 @@ if __name__ == "__main__":
     pc_iloss_mu = float(args.pc_iloss_mu)       # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
     pc_iloss_sigma = float(args.pc_iloss_sigma) # Std deviation
 
-    i_loss_MMI_mu = -0.25        # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
+    i_loss_MMI_mu = -0.5        # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
     i_loss_MMI_sigma = 0.1      # Std deviation
     imbalance_mu = float(args.imbalance_mu)            # Average =P_outmax/P_outmin. 0dB 50/50 MMI, 100dB all power to outUP, -100dB all power to outDOWN
     imbalance_sigma = 0.15      # Std deviation
 
-    i_loss_Crossing_mu = -0.25       # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
+    i_loss_Crossing_mu = -0.2        # Average =P_out/P_in. 0dB pefect component, -100dB very lossy
     i_loss_Crossing_sigma = 0.05     # Std deviation
     cross_talk_mu = -35             # Average =P_leakout/P_otherout. -infdB Crossing perfect, -1dB very bad device a lot power leak
     cross_talk_sigma = 1            # Std deviation
