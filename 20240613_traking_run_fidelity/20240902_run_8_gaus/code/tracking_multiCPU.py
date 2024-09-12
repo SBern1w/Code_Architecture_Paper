@@ -58,6 +58,8 @@ class FidelityUnitary(nn.Module):
 
 # Model -----------------------------------------------------------------------------------------------------------
 def create_truncated_gaussian_tensor(mean, std_dev, shape, upper_bound=np.inf):
+    if std_dev == 0:
+        return mean*np.ones(shape)
     # Calculate the parameters for truncnorm: (a, b) are the normalized boundaries
     a = (-np.inf - mean) / std_dev
     b = (upper_bound - mean) / std_dev
