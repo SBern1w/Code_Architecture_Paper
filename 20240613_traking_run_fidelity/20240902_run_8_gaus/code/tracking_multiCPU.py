@@ -59,14 +59,15 @@ class FidelityUnitary(nn.Module):
 # Model -----------------------------------------------------------------------------------------------------------
 def create_truncated_gaussian_tensor(mean, std_dev, shape, upper_bound=np.inf):
     if std_dev == 0:
-        return mean*np.ones(shape)
+        gaus_truncate_np = mean*np.ones(shape)
+        return torch.from_numpy(gaus_truncate_np)
     # Calculate the parameters for truncnorm: (a, b) are the normalized boundaries
     a = (-np.inf - mean) / std_dev
     b = (upper_bound - mean) / std_dev
 
     # Generate truncated Gaussian values
-    tensor_gaus_truncate = truncnorm.rvs(a, b, loc=mean, scale=std_dev, size=shape)
-    return tensor_gaus_truncate
+    gaus_truncate_np = truncnorm.rvs(a, b, loc=mean, scale=std_dev, size=shape)
+    return torch.from_numpy(gaus_truncate_np)
 
 def select_model(name_model):
     pc_i_losses_mtx_even = create_truncated_gaussian_tensor(pc_iloss_mu, pc_iloss_sigma, (2*(n_inputs-1), n_inputs), 0)
