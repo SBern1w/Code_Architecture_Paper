@@ -1,0 +1,17 @@
+{
+    "name_file": "powers_Clements_Arct_N8",
+    "arct": "Clements_Arct",
+    "n_inputs": 8,
+    "n_epochs": 22000,
+    "date": "20240801",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 5,
+    "lr": 0.001,
+    "n_bachup": 500,
+    "data_out_type": "losses",
+    "rep_type": "all repetitions take considerations",
+    "num_vectors": 1000,
+    "simulations": []
+}
