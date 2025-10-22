@@ -1,0 +1,76 @@
+{
+    "name_file": "sim_NEUROPULSCrossingSide_Arct_N8",
+    "arct": "NEUROPULSCrossingSide_Arct",
+    "n_inputs": 8,
+    "n_epochs": 22000,
+    "date": "20251013",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 10,
+    "lr": 0.001,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "pc_loss_dB_max": 0.0,
+            "fidelity_q1": 0.9999999227646736,
+            "fidelity_median": 0.9999999445104315,
+            "fidelity_q3": 0.9999999598280723
+        },
+        {
+            "pc_loss_dB_max": 0.1,
+            "fidelity_q1": 0.9997688706087575,
+            "fidelity_median": 0.9997951228075285,
+            "fidelity_q3": 0.9998187813542585
+        },
+        {
+            "pc_loss_dB_max": 0.2,
+            "fidelity_q1": 0.9991190945414734,
+            "fidelity_median": 0.999207305983404,
+            "fidelity_q3": 0.999302049178329
+        },
+        {
+            "pc_loss_dB_max": 0.5,
+            "fidelity_q1": 0.9952329785730899,
+            "fidelity_median": 0.9956177879455097,
+            "fidelity_q3": 0.9960682591922115
+        },
+        {
+            "pc_loss_dB_max": 0.75,
+            "fidelity_q1": 0.9901189916172007,
+            "fidelity_median": 0.9909668764993655,
+            "fidelity_q3": 0.9918687822317538
+        },
+        {
+            "pc_loss_dB_max": 1.0,
+            "fidelity_q1": 0.9837139299341277,
+            "fidelity_median": 0.9850488078947941,
+            "fidelity_q3": 0.9863798463508217
+        },
+        {
+            "pc_loss_dB_max": 1.25,
+            "fidelity_q1": 0.9763379540652042,
+            "fidelity_median": 0.9784439947675432,
+            "fidelity_q3": 0.9805492545994272
+        },
+        {
+            "pc_loss_dB_max": 1.5,
+            "fidelity_q1": 0.9682643660966515,
+            "fidelity_median": 0.9708566834911156,
+            "fidelity_q3": 0.9733879006766967
+        },
+        {
+            "pc_loss_dB_max": 1.75,
+            "fidelity_q1": 0.9591577784222269,
+            "fidelity_median": 0.9622294419699413,
+            "fidelity_q3": 0.9653767086870013
+        },
+        {
+            "pc_loss_dB_max": 2.0,
+            "fidelity_q1": 0.9511043449952414,
+            "fidelity_median": 0.9544241938857997,
+            "fidelity_q3": 0.9579568290305347
+        }
+    ]
+}

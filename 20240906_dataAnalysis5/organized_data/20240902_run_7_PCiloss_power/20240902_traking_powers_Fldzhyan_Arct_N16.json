@@ -1,0 +1,32 @@
+{
+    "name_file": "traking_powers_Fldzhyan_Arct_N16",
+    "arct": "Fldzhyan_Arct",
+    "n_inputs": 16,
+    "n_epochs": 26000,
+    "date": "20240902",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 5,
+    "lr": 0.001,
+    "n_bachup": 500,
+    "data_out_type": "insertionlosses",
+    "rep_type": "all repetitions take considerations",
+    "num_vectors": 1000,
+    "simulations": [
+        {
+            "PC_i_loss_const": -1.0,
+            "il_mmi_const": -0.5,
+            "imbalance_const": 0.0,
+            "il_cross_const": -0.2,
+            "cross_talk_const": -35.0,
+            "i_loss": null,
+            "i_loss_q25": 0.0008949423668413604,
+            "i_loss_q50": 0.00097609408237918,
+            "i_loss_q75": 0.001060826742729956,
+            "i_loss_q25_dB": -30.482049317999508,
+            "i_loss_q50_dB": -30.105083201520507,
+            "i_loss_q75_dB": -29.74355540528993
+        }
+    ]
+}

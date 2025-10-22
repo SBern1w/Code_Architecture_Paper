@@ -1,0 +1,82 @@
+{
+    "name_file": "sim_Fldzhyan_Arct_N8",
+    "arct": "Fldzhyan_Arct",
+    "n_inputs": 8,
+    "n_epochs": 22000,
+    "date": "20251013",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 10,
+    "lr": 0.001,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "N_bits": 16,
+            "fidelity_q1": 0.999998620978799,
+            "fidelity_median": 0.9999998049440912,
+            "fidelity_q3": 0.9999999235431993
+        },
+        {
+            "N_bits": 12,
+            "fidelity_q1": 0.9999714551974331,
+            "fidelity_median": 0.9999870732917548,
+            "fidelity_q3": 0.9999934993469941
+        },
+        {
+            "N_bits": 10,
+            "fidelity_q1": 0.999807813742481,
+            "fidelity_median": 0.9998768619481417,
+            "fidelity_q3": 0.9999124635953632
+        },
+        {
+            "N_bits": 9,
+            "fidelity_q1": 0.9994880970470584,
+            "fidelity_median": 0.9996203797538195,
+            "fidelity_q3": 0.9997086210134395
+        },
+        {
+            "N_bits": 8,
+            "fidelity_q1": 0.9984908827330086,
+            "fidelity_median": 0.9987767001944459,
+            "fidelity_q3": 0.9990005795571474
+        },
+        {
+            "N_bits": 7,
+            "fidelity_q1": 0.9954787574379839,
+            "fidelity_median": 0.996104789950823,
+            "fidelity_q3": 0.9966486495838724
+        },
+        {
+            "N_bits": 6,
+            "fidelity_q1": 0.9858577310199036,
+            "fidelity_median": 0.9873733060869534,
+            "fidelity_q3": 0.9887216534885578
+        },
+        {
+            "N_bits": 5,
+            "fidelity_q1": 0.9542732136866376,
+            "fidelity_median": 0.9587011031667421,
+            "fidelity_q3": 0.9631904456263012
+        },
+        {
+            "N_bits": 4,
+            "fidelity_q1": 0.85296177513898,
+            "fidelity_median": 0.8657746425604822,
+            "fidelity_q3": 0.8804888296873874
+        },
+        {
+            "N_bits": 3,
+            "fidelity_q1": 0.5718717773080281,
+            "fidelity_median": 0.6054684682326625,
+            "fidelity_q3": 0.641255967535307
+        },
+        {
+            "N_bits": 2,
+            "fidelity_q1": 0.15883066116363437,
+            "fidelity_median": 0.18424851019000274,
+            "fidelity_q3": 0.21660694261604682
+        }
+    ]
+}

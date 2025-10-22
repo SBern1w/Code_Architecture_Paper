@@ -1,0 +1,148 @@
+{
+    "name_file": "sim_NEUROPULSCrossingSide_Arct_N8",
+    "arct": "NEUROPULSCrossingSide_Arct",
+    "n_inputs": 8,
+    "n_epochs": 22000,
+    "date": "20251013",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 10,
+    "lr": 0.001,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "V_noise_std": 0.0001,
+            "fidelity_q1": 0.9999939056967437,
+            "fidelity_median": 0.9999957791295069,
+            "fidelity_q3": 0.9999970461092672
+        },
+        {
+            "V_noise_std": 0.001,
+            "fidelity_q1": 0.9999570078609576,
+            "fidelity_median": 0.9999650894697187,
+            "fidelity_q3": 0.9999721562765896
+        },
+        {
+            "V_noise_std": 0.0025,
+            "fidelity_q1": 0.9998556506376007,
+            "fidelity_median": 0.9998827479569166,
+            "fidelity_q3": 0.999902435896244
+        },
+        {
+            "V_noise_std": 0.005,
+            "fidelity_q1": 0.9996281485533705,
+            "fidelity_median": 0.9996859610033544,
+            "fidelity_q3": 0.9997365666969557
+        },
+        {
+            "V_noise_std": 0.0075,
+            "fidelity_q1": 0.999297197868916,
+            "fidelity_median": 0.9993977332243351,
+            "fidelity_q3": 0.9994980443177112
+        },
+        {
+            "V_noise_std": 0.01,
+            "fidelity_q1": 0.9989232671568644,
+            "fidelity_median": 0.9990593826238297,
+            "fidelity_q3": 0.9992167823504674
+        },
+        {
+            "V_noise_std": 0.025,
+            "fidelity_q1": 0.9952388363759294,
+            "fidelity_median": 0.9958218286436451,
+            "fidelity_q3": 0.9963970841840801
+        },
+        {
+            "V_noise_std": 0.05,
+            "fidelity_q1": 0.9843169958803433,
+            "fidelity_median": 0.9861034571150888,
+            "fidelity_q3": 0.9878876109927174
+        },
+        {
+            "V_noise_std": 0.075,
+            "fidelity_q1": 0.9678852341926825,
+            "fidelity_median": 0.9711865297865965,
+            "fidelity_q3": 0.9745182905959096
+        },
+        {
+            "V_noise_std": 0.1,
+            "fidelity_q1": 0.946701050080981,
+            "fidelity_median": 0.9523737342199847,
+            "fidelity_q3": 0.9580830167063776
+        },
+        {
+            "V_noise_std": 0.25,
+            "fidelity_q1": 0.7263999327679465,
+            "fidelity_median": 0.753962455176847,
+            "fidelity_q3": 0.7795102566833104
+        },
+        {
+            "V_noise_std": 0.5,
+            "fidelity_q1": 0.30100731043029794,
+            "fidelity_median": 0.34223220373641616,
+            "fidelity_q3": 0.3924895120204091
+        },
+        {
+            "V_noise_std": 0.75,
+            "fidelity_q1": 0.08417645185773678,
+            "fidelity_median": 0.10809692346571456,
+            "fidelity_q3": 0.1406340460220873
+        },
+        {
+            "V_noise_std": 1.0,
+            "fidelity_q1": 0.04137590201343665,
+            "fidelity_median": 0.053922538698368445,
+            "fidelity_q3": 0.06953776024143596
+        },
+        {
+            "V_noise_std": 0.15,
+            "fidelity_q1": 0.8877008764435488,
+            "fidelity_median": 0.8986156712482434,
+            "fidelity_q3": 0.9096883490016727
+        },
+        {
+            "V_noise_std": 0.2,
+            "fidelity_q1": 0.8130598069710842,
+            "fidelity_median": 0.832440087959339,
+            "fidelity_q3": 0.8514898479945502
+        },
+        {
+            "V_noise_std": 0.3,
+            "fidelity_q1": 0.6362979325826481,
+            "fidelity_median": 0.6670021960557427,
+            "fidelity_q3": 0.7009536377347617
+        },
+        {
+            "V_noise_std": 0.35,
+            "fidelity_q1": 0.5466837523456736,
+            "fidelity_median": 0.5833572090643856,
+            "fidelity_q3": 0.6213082168348478
+        },
+        {
+            "V_noise_std": 0.4,
+            "fidelity_q1": 0.45476926328424594,
+            "fidelity_median": 0.4980396370915182,
+            "fidelity_q3": 0.5403580595314654
+        },
+        {
+            "V_noise_std": 0.55,
+            "fidelity_q1": 0.23733427004960428,
+            "fidelity_median": 0.2773071457326277,
+            "fidelity_q3": 0.32736584127092166
+        },
+        {
+            "V_noise_std": 0.6,
+            "fidelity_q1": 0.1841128872218549,
+            "fidelity_median": 0.2248041640086958,
+            "fidelity_q3": 0.26968559788056234
+        },
+        {
+            "V_noise_std": 0.9,
+            "fidelity_q1": 0.04678252507111359,
+            "fidelity_median": 0.061992387094952486,
+            "fidelity_q3": 0.08056538441350436
+        }
+    ]
+}

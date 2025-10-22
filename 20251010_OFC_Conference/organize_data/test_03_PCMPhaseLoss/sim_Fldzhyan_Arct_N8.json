@@ -1,0 +1,76 @@
+{
+    "name_file": "sim_Fldzhyan_Arct_N8",
+    "arct": "Fldzhyan_Arct",
+    "n_inputs": 8,
+    "n_epochs": 22000,
+    "date": "20251013",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 10,
+    "lr": 0.001,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "pc_loss_dB_max": 0.0,
+            "fidelity_q1": 0.999998678149341,
+            "fidelity_median": 0.9999998207463352,
+            "fidelity_q3": 0.9999999234281343
+        },
+        {
+            "pc_loss_dB_max": 0.1,
+            "fidelity_q1": 0.9997193587793468,
+            "fidelity_median": 0.9997496992695107,
+            "fidelity_q3": 0.9997802162683216
+        },
+        {
+            "pc_loss_dB_max": 0.2,
+            "fidelity_q1": 0.9989766769381512,
+            "fidelity_median": 0.9990846649186319,
+            "fidelity_q3": 0.9991886646923158
+        },
+        {
+            "pc_loss_dB_max": 0.5,
+            "fidelity_q1": 0.9946700728883993,
+            "fidelity_median": 0.9951548626170014,
+            "fidelity_q3": 0.995675393288044
+        },
+        {
+            "pc_loss_dB_max": 0.75,
+            "fidelity_q1": 0.9894360677557534,
+            "fidelity_median": 0.9904904992699972,
+            "fidelity_q3": 0.9914506424646923
+        },
+        {
+            "pc_loss_dB_max": 1.0,
+            "fidelity_q1": 0.9827721372187914,
+            "fidelity_median": 0.9844549157636124,
+            "fidelity_q3": 0.9860646870134504
+        },
+        {
+            "pc_loss_dB_max": 1.25,
+            "fidelity_q1": 0.9754786414096698,
+            "fidelity_median": 0.9777076626644305,
+            "fidelity_q3": 0.980099469244128
+        },
+        {
+            "pc_loss_dB_max": 1.5,
+            "fidelity_q1": 0.9675700384811209,
+            "fidelity_median": 0.9706153595061457,
+            "fidelity_q3": 0.9736407433253983
+        },
+        {
+            "pc_loss_dB_max": 1.75,
+            "fidelity_q1": 0.9594040458169892,
+            "fidelity_median": 0.9631451452440044,
+            "fidelity_q3": 0.9669742185310936
+        },
+        {
+            "pc_loss_dB_max": 2.0,
+            "fidelity_q1": 0.9504691730977053,
+            "fidelity_median": 0.9550997592388204,
+            "fidelity_q3": 0.9598960823312364
+        }
+    ]
+}

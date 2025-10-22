@@ -1,0 +1,76 @@
+{
+    "name_file": "sim_NEUROPULSCrossingSide_Arct_N8",
+    "arct": "NEUROPULSCrossingSide_Arct",
+    "n_inputs": 8,
+    "n_epochs": 22000,
+    "date": "20251013",
+    "train_type": "1-Fidelity",
+    "seed": 37,
+    "n_matrices": 1000,
+    "n_repetitions": 10,
+    "lr": 0.001,
+    "data_out_type": "Fidelity",
+    "rep_type": "max",
+    "simulations": [
+        {
+            "N_dim": 4,
+            "fidelity_q1": 0.9890209964619613,
+            "fidelity_median": 0.9901122106824507,
+            "fidelity_q3": 0.9912239768163342
+        },
+        {
+            "N_dim": 6,
+            "fidelity_q1": 0.9785568801494822,
+            "fidelity_median": 0.9802193516811784,
+            "fidelity_q3": 0.9821148164626441
+        },
+        {
+            "N_dim": 8,
+            "fidelity_q1": 0.9671512009960158,
+            "fidelity_median": 0.9695230716758003,
+            "fidelity_q3": 0.9711626823739549
+        },
+        {
+            "N_dim": 10,
+            "fidelity_q1": 0.9560027344014113,
+            "fidelity_median": 0.9581348776788003,
+            "fidelity_q3": 0.9607391946848649
+        },
+        {
+            "N_dim": 14,
+            "fidelity_q1": 0.9321919234855636,
+            "fidelity_median": 0.9349391251379127,
+            "fidelity_q3": 0.9386016078251637
+        },
+        {
+            "N_dim": 18,
+            "fidelity_q1": 0.9074608179154697,
+            "fidelity_median": 0.9102054961784034,
+            "fidelity_q3": 0.9134194255694323
+        },
+        {
+            "N_dim": 22,
+            "fidelity_q1": 0.8807017720481978,
+            "fidelity_median": 0.8841077463423308,
+            "fidelity_q3": 0.8874045106105823
+        },
+        {
+            "N_dim": 26,
+            "fidelity_q1": 0.8531465067235584,
+            "fidelity_median": 0.8564759777443443,
+            "fidelity_q3": 0.8606178716835234
+        },
+        {
+            "N_dim": 28,
+            "fidelity_q1": 0.838885186125671,
+            "fidelity_median": 0.8423204641139419,
+            "fidelity_q3": 0.8470362846357836
+        },
+        {
+            "N_dim": 32,
+            "fidelity_q1": 0.8092340984186132,
+            "fidelity_median": 0.813827813203849,
+            "fidelity_q3": 0.8173100439517266
+        }
+    ]
+}
